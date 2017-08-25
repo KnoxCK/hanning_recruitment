@@ -1,0 +1,33 @@
+.banner {
+  background-image: linear-gradient(-225deg, rgba(0,10,30,0.7) 50%, rgba(0,36,61,0.6) 80%), url('http://res.cloudinary.com/dwkjj7bpb/image/upload/v1503663709/Hanning_recruitment_landing_dwix70.jpg');
+  color: white;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h4 {
+    font-style: italic;
+    margin-top: 30px;
+  }
+  span {
+    color: #FFF800;
+  }
+}
+.submark-logo {
+  width: 200px
+}
+.main-logo {
+  width: 500px;
+  margin-top: -40px;
+  border-bottom: 1.5px solid #FFF800;
+}
