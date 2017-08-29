@@ -1,0 +1,89 @@
+.about-us {
+	display: flex;
+	justify-content: center;
+	padding: 50px 0;
+	h2 {
+		color: #d6d6d6;
+		letter-spacing: 1px;
+		font-style: italic;
+	}
+	hr {
+		width: auto;
+		color: #ffec3b;
+		border-top: 2px solid #ffec3b;
+		margin-right: 76px;
+	}
+}
+.about-us-left-col {
+	width: 400px;
+	margin-left: 50px;
+	p {
+		color: #1D2C37;
+		font-size: 14px;
+	}
+	strong {
+		font-size: 15px;
+	}
+}
+.about-us-right-col {
+	width: 600px;
+	padding: 0 60px;
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	h5, h6 {
+		color: #d6d6d6;
+		font-style: italic;
+		text-align: center;
+		margin: 0;
+	}
+}
+.team-circle {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	img {
+		border-radius: 50%;
+	    height: 150px;
+	    width: 150px;
+	    margin: 20px;
+	    border: transparent solid 3px;
+	}
+	p {
+	    top: 93px;
+	    left: 30px;
+	    width: 180px;
+	    text-align: center;
+	    color: white;
+	}
+}
+.team-circle:hover { 
+	img {
+		border: #ffec3b solid 3px;
+	}
+}
+.team-more-info {
+	background-color: #243548;
+	height: auto;
+	width: 100%;
+	padding: 45px 150px;
+	h3 {
+		color: #d6d6d6;
+		font-style: italic;
+	}
+	hr {
+		border-top: #ffec3b solid 2px;
+	}
+	p, li {
+		color: white;
+	}
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+<div class="landing-hanning">
+  <!-- Logo -->
+  <%= link_to root_path, class: "landing-hanning-brand" do %>
+    <%= image_tag "Hanning_Submark_RGB_Yellow.png", class: "landing-hanning-submark" %>
+    <%= image_tag "Hanning_FullLogo_RGB_Navy.png", class: "landing-hanning-logo" %>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="landing-hanning-right hidden-xs hidden-sm">
+
+    <%= link_to "Register", "", class: "btn btn-hanning" %>
+
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="landing-hanning-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right landing-hanning-dropdown-menu">
+          <%= link_to "Home", root_path %>
+          <%= link_to "What We Do", what_we_do_path %>
+          <%= link_to "About Us", about_us_path %>
+          <%= link_to "Live Roles", live_roles_path %>
+          <%= link_to "News", news_path %>
+          <%= link_to "Contact", contact_path %>
+      </ul>
+    </div>
+  </div>
+</div>

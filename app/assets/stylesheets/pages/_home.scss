@@ -3,7 +3,7 @@
 	bottom: 140px;
 	z-index: 10;
 }
-.menu-circle-link {
+.menu-circle {
 	color: white;
 	font-size: 16px;
 	font-weight: lighter;
@@ -12,8 +12,10 @@
 	border: #243548 solid 2px;
   	padding: 40px 20px;
     margin: 0 10px;
+    width: 200px;
+    height: 200px;
 }
-.menu-circle-link:hover {
+.menu-circle:hover {
 	color: white;
 	text-decoration: none;
 	border: #ffec3b solid 2px;

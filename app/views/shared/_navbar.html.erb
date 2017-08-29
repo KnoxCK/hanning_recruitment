@@ -2,13 +2,19 @@
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-hanning-brand" do %>
     <%= image_tag "Hanning_Submark_RGB_Yellow.png", class: "navbar-hanning-submark" %>
-    <%= image_tag "Hanning_FullLogo_RGB_Navy.png", class: "navbar-hanning-logo" %>
   <% end %>
+  <div class="navbar-links">
+    <%= link_to "What We Do", what_we_do_path %>
+    <%= link_to "About Us", about_us_path %>
+    <%= link_to "Live Roles", live_roles_path %>
+    <%= link_to "News", news_path %>
+    <%= link_to "Contact", contact_path %>
+  </div>
 
   <!-- Right Navigation -->
   <div class="navbar-hanning-right hidden-xs hidden-sm">
 
-    <%= link_to "Register", "", class: "btn btn-hanning" %>
+    <%= link_to "Register", "", class: "btn btn-register" %>
 
   </div>
 
@@ -17,11 +23,15 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-hanning-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <%= link_to "Home", root_path %>
+        <%= link_to "What We Do", what_we_do_path %>
+        <%= link_to "About Us", about_us_path %>
+        <%= link_to "Live Roles", live_roles_path %>
+        <%= link_to "News", news_path %>
+        <%= link_to "Contact", contact_path %>
       </ul>
     </div>
   </div>
 </div>
+
 

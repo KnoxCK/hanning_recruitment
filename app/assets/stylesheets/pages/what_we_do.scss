@@ -12,7 +12,8 @@
 .what-we-do {
 	display: flex;
 	justify-content: center;
-	h1 {
+	padding-top: 50px;
+	h2 {
 		color: #d6d6d6;
 		letter-spacing: 1px;
 		font-style: italic;
@@ -26,19 +27,20 @@
 }
 .what-we-do-left-col {
 	width: 400px;
-	margin-left: 90px;
+	margin-left: 50px;
 	p {
+		color: #1D2C37;
 		font-weight: bold;
-		font-size: 14px;
+		font-size: 15px;
 	}
 }
 .what-we-do-right-col {
 	width: 600px;
 	padding: 0 40px;
-	margin-top: 105px;
+	margin-top: 95px;
 	li {
-		color: black;
-		font-size: 13px;
+		color: #243548;
+		font-size: 14px;
 		padding-top: 10px;
 	}
 }

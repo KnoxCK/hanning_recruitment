@@ -1,4 +1,4 @@
-<%= render 'shared/navbar' %>
+<%= render 'shared/landing_navbar' %>
 <div class="banner">
 	<div class="banner-content fadeOut hidden">
 	<%= image_tag "Hanning_Submark_RGB_Yellow.png", class: "submark-logo" %>
@@ -6,11 +6,11 @@
     	<h4>Connected <span>–</span> Professional <span>–</span> Trusted</h4>
   	</div>
   	<div class="menu-circles">
-      	<%= link_to "What We Do", "", class: "menu-circle-link" %>
-      	<%= link_to "About Us", "", class: "menu-circle-link" %>
-      	<%= link_to "Live Roles", "", class: "menu-circle-link" %>
-      	<%= link_to "News", "", class: "menu-circle-link" %>
-      	<%= link_to "Contact", "", class: "menu-circle-link" %>
+      <%= link_to "What We Do", what_we_do_path, class: "menu-circle" %>
+      <%= link_to "About Us", about_us_path, class: "menu-circle" %>
+      <%= link_to "Live Roles", live_roles_path, class: "menu-circle" %>
+      <%= link_to "News", news_path, class: "menu-circle" %>
+      <%= link_to "Contact", contact_path, class: "menu-circle" %>
   	</div>
   	<div class="home-strip text-center">
   		<h4>Connected <span>–</span> Professional <span>–</span> Trusted</h4>

@@ -1,0 +1,93 @@
+.live-roles {
+	display: flex;
+	justify-content: left;
+	flex-direction: column;
+	padding: 100px 50px 0;
+	margin-left: 125px;
+	h2 {
+		color: #d6d6d6;
+		letter-spacing: 1px;
+		font-style: italic;
+	}
+	hr {
+		width: auto;
+		color: #ffec3b;
+		border-top: 2px solid #ffec3b;
+		margin-right: 76px;
+	}
+}
+.live-roles-title {
+	p {
+		color: #1D2C37;
+		font-size: 14px;
+	}
+}
+.job-roles {
+	padding: 50px 0;
+}
+.job-role {
+	display: flex;
+	border-bottom: 4px solid #f4f4f4;
+	padding-top: 10px;
+	margin-top: 10px;
+	h6 {
+		color: #d6d6d6;
+		font-size: 16px;
+		font-style: italic;
+	}
+	p {
+		font-size: 15px;
+	}
+}
+.live-job {
+	background-color: #f4f4f4;
+}
+.job-title {
+	width: 200px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.job-sector {
+	width: 150px;
+	padding-right: 20px;
+}
+.job-salary {
+	width: 150px;
+	padding-right: 20px;
+}
+.job-package {
+	width: 150px;
+	padding-right: 20px;
+}
+.job-description {
+	width: 300px;
+	padding-right: 20px;
+}
+
+
+
+
+
+.live-roles-more-info {
+	background-color: #243548;
+	height: auto;
+	width: 100%;
+	padding: 45px 150px;
+	h3 {
+		color: #d6d6d6;
+		font-style: italic;
+	}
+	hr {
+		border-top: #ffec3b solid 2px;
+	}
+	p, li {
+		color: white;
+	}
+}
+
+
+
+
+
+
+
