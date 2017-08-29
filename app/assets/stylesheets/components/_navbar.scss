@@ -1,7 +1,7 @@
 /* Main navbar */
-.navbar-wagon {
+.navbar-hanning {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
+  background: #f4f4f4;
   transition: all 0.3s ease;
   height: 70px;
   padding: 0px 30px;
@@ -11,47 +11,50 @@
 }
 
 /* Logo */
-.navbar-wagon-brand img {
-  height: 50px;
+.navbar-hanning-submark {
+  height: 90px;
 }
-
+.navbar-hanning-logo {
+  height: 80px;
+  margin-left: -23px;
+}
 /* User Avatar */
-.navbar-wagon .avatar {
+.navbar-hanning .avatar {
   height: 35px;
   width: 35px;
   border-radius: 50%;
 }
 
 /* Right section */
-.navbar-wagon-right {
+.navbar-hanning-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 /* Basic navbar item */
-.navbar-wagon-item {
+.navbar-hanning-item {
   cursor: pointer;
   padding: 0 20px;
 }
 
 /* Navbar link */
-.navbar-wagon-link {
+.navbar-hanning-link {
   color: #616668;
   font-size: 14px;
 }
-.navbar-wagon-link:hover {
+.navbar-hanning-link:hover {
   color: #da552f;
   text-decoration: none;
 }
 
 /* Dropdown menu */
-.navbar-wagon-dropdown-menu {
+.navbar-hanning-dropdown-menu {
   margin-top: 15px;
   box-shadow: 1px 1px 4px #E6E6E6;
   border-color: #E6E6E6;
 }
-.navbar-wagon-dropdown-menu li > a {
+.navbar-hanning-dropdown-menu li > a {
   transition: color 0.3s ease;
   font-weight: lighter !important;
   color: #999999 !important;
@@ -59,11 +62,11 @@
   line-height: 22px !important;
   padding: 10px 20px;
 }
-.navbar-wagon-dropdown-menu li > a:hover {
+.navbar-hanning-dropdown-menu li > a:hover {
   background: transparent !important;
   color: black !important;
 }
-.navbar-wagon-dropdown-menu:before {
+.navbar-hanning-dropdown-menu:before {
   content: ' ';
   height: 10px;
   width: 10px;

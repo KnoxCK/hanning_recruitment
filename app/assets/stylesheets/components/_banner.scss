@@ -2,14 +2,16 @@
   background-image: linear-gradient(-225deg, rgba(0,10,30,0.7) 50%, rgba(0,36,61,0.6) 80%), url('http://res.cloudinary.com/dwkjj7bpb/image/upload/v1503663709/Hanning_recruitment_landing_dwix70.jpg');
   color: white;
   text-align: center;
-  height: 100vh;
+  height: calc(100vh - 70px);
   width: 100%;
   background-size: cover !important;
+  background-position: center;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  z-index: 0;
 }
 .banner-content {
   display: flex;
@@ -18,6 +20,9 @@
   h4 {
     font-style: italic;
     margin-top: 30px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-size: 20px;
   }
   span {
     color: #FFF800;
@@ -31,3 +36,20 @@
   margin-top: -40px;
   border-bottom: 1.5px solid #FFF800;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

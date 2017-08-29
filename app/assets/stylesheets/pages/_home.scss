@@ -1,1 +1,40 @@
-// Specific CSS for your home-page
+.menu-circles {
+	position: absolute;
+	bottom: 140px;
+	z-index: 10;
+}
+.menu-circle-link {
+	color: white;
+	font-size: 16px;
+	font-weight: lighter;
+	background-color: #1b3447;
+	border-radius: 50%;
+	border: #1b3447 solid 2px;
+  	padding: 40px 20px;
+    margin: 0 10px;
+}
+.menu-circle-link:hover {
+	color: white;
+	text-decoration: none;
+	border: #FFF800 solid 2px;
+	padding: 40px 20px;
+}
+.home-strip {
+	background-color: #1b3447;
+	height: 150px;
+	width: 100%;
+	position: fixed;
+    bottom: 0;
+    z-index: -10;
+    h4 {
+    	font-style: italic;
+	    margin-top: 30px;
+	    letter-spacing: 1px;
+	    font-size: 22px;
+	    z-index: 20;
+	    margin-top: 70px;
+    }
+    span {
+	    color: #FFF800;
+	}
+}
