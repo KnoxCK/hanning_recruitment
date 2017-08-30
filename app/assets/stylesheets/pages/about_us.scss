@@ -48,6 +48,9 @@
 	    width: 150px;
 	    margin: 20px;
 	    border: transparent solid 3px;
+      &.active {
+        border: #ffec3b solid 3px;
+      }
 	}
 	p {
 	    top: 93px;
@@ -57,7 +60,7 @@
 	    color: white;
 	}
 }
-.team-circle:hover { 
+.team-circle:hover {
 	img {
 		border: #ffec3b solid 3px;
 	}
