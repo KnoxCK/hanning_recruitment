@@ -33,6 +33,10 @@
     font-size: 15px;
     letter-spacing: 0.5px;
     color: #d6d6d6;
+    &.active {
+      color: #ffec3b;
+      text-decoration: none;
+    }
   }
   a:hover {
     color: #ffec3b;
