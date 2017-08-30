@@ -55,21 +55,28 @@
 	position: relative;
 	img {
 		border-radius: 50%;
-	    height: 200px;
-	    width: 200px;
-	    margin: 20px;
-	    border: transparent solid 3px;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border: transparent solid 3px;
+    &.active {
+      border: #ffec3b solid 3px;
+    }
 	}
 	p {
 		position: absolute;
-	    top: 93px;
-	    left: 30px;
-	    width: 180px;
-	    text-align: center;
-	    color: white;
+    top: 93px;
+    left: 30px;
+    width: 180px;
+    text-align: center;
+    color: white;
 	}
+  &:hover {
+    cursor: pointer;
+  }
+
 }
-.sector-circle:hover { 
+.sector-circle:hover {
 	img {
 		border: #ffec3b solid 3px;
 	}
