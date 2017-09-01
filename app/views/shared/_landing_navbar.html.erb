@@ -1,4 +1,4 @@
-<div class="landing-hanning">
+<div class="landing-hanning navbar-hanning-fixed fadeIn hidden">
   <!-- Logo -->
   <%= link_to root_path, class: "landing-hanning-brand" do %>
     <%= image_tag "Hanning_Submark_RGB_Yellow.png", class: "landing-hanning-submark" %>
@@ -15,15 +15,18 @@
   <!-- Dropdown list appearing on mobile only -->
   <div class="landing-hanning-item hidden-md hidden-lg">
     <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <i class="fa fa-bars dropdown-toggle toggle-blue" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right landing-hanning-dropdown-menu">
-          <%= link_to "Home", root_path %>
-          <%= link_to "What We Do", what_we_do_path %>
-          <%= link_to "About Us", about_us_path %>
-          <%= link_to "Live Roles", live_roles_path %>
-          <%= link_to "News", news_path %>
-          <%= link_to "Contact", contact_path %>
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "What We Do", what_we_do_path %></li>
+          <li><%= link_to "About Us", about_us_path %></li>
+          <li><%= link_to "Live Roles", live_roles_path %></li>
+          <li><%= link_to "News", news_path %></li>
+          <li><%= link_to "Contact", contact_path %></li>
       </ul>
     </div>
   </div>
+</div>
+
+<div class="landing-transparent">
 </div>

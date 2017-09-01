@@ -1,18 +1,28 @@
 <%= render 'shared/landing_navbar' %>
-<div class="banner">
-	<div class="banner-content fadeOut hidden">
+<div class="banner wrapper">
+	<div class="banner-content">
 	<%= image_tag "Hanning_Submark_RGB_Yellow.png", class: "submark-logo" %>
     <%= image_tag "Hanning_FullLogo_RGB_White.png", class: "main-logo" %>
     	<h4>Connected <span>–</span> Professional <span>–</span> Trusted</h4>
   	</div>
-  	<div class="menu-circles">
-      <%= link_to "What We Do", what_we_do_path, class: "menu-circle" %>
-      <%= link_to "About Us", about_us_path, class: "menu-circle" %>
-      <%= link_to "Live Roles", live_roles_path, class: "menu-circle" %>
-      <%= link_to "News", news_path, class: "menu-circle" %>
-      <%= link_to "Contact", contact_path, class: "menu-circle" %>
+  	<div class="menu-circles fadeIn hidden hidden-xs hidden-sm">
+      <div class="menu-circle">
+      <p><%= link_to "What We Do", what_we_do_path %></p>
+      </div>
+      <div class="menu-circle">
+      <p><%= link_to "About Us", about_us_path %></p>
+      </div>
+      <div class="menu-circle">
+      <p><%= link_to "Live Roles", live_roles_path %></p>
+      </div>
+      <div class="menu-circle">
+      <p><%= link_to "News", news_path %></p>
+      </div>
+      <div class="menu-circle">
+      <p><%= link_to "Contact", contact_path %></p>
+      </div>
   	</div>
-  	<div class="home-strip text-center">
+  	<div class="home-strip fadeIn hidden text-center">
   		<h4>Connected <span>–</span> Professional <span>–</span> Trusted</h4>
   	</div>
 </div>

@@ -1,25 +1,35 @@
 .menu-circles {
 	position: absolute;
-	bottom: 140px;
-	z-index: 10;
+	bottom: 105px;
+	z-index: 3000 !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .menu-circle {
-	color: white;
-	font-size: 16px;
-	font-weight: lighter;
+	margin: 0 20px;
 	background-color: #243548;
 	border-radius: 50%;
 	border: #243548 solid 2px;
-  	padding: 40px 20px;
-    margin: 0 10px;
-    width: 200px;
-    height: 200px;
+	width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	a {
+		color: white;
+		text-decoration: none;
+	}
+    p {
+		font-size: 16px;
+		padding-top: 10px;
+		// font-weight: lighter;
+    }
 }
 .menu-circle:hover {
 	color: white;
 	text-decoration: none;
-	border: #ffec3b solid 2px;
-	padding: 40px 20px;
+	border: #ffec3b solid 3px;
 }
 .home-strip {
 	background-color: #243548;
@@ -27,14 +37,14 @@
 	width: 100%;
 	position: fixed;
     bottom: 0;
-    z-index: -10;
+    z-index: 1;
     h4 {
     	font-style: italic;
 	    margin-top: 30px;
-	    letter-spacing: 1px;
-	    font-size: 22px;
+	    font-size: 20px;
 	    z-index: 20;
 	    margin-top: 70px;
+	    font-weight: lighter;
     }
     span {
 	    color: #ffec3b;

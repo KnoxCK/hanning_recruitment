@@ -1,8 +1,8 @@
 .banner {
-  background-image: linear-gradient(-225deg, rgba(0,10,30,0.7) 50%, rgba(0,36,61,0.6) 80%), url('http://res.cloudinary.com/dwkjj7bpb/image/upload/v1503663709/Hanning_recruitment_landing_dwix70.jpg');
+  background-image: url('http://res.cloudinary.com/dqxvcdy6w/image/upload/v1504288615/Hanning_Recruitment_mpdjlg.jpg');
   color: white;
   text-align: center;
-  height: calc(100vh - 70px);
+  height: calc(100vh);
   width: 100%;
   background-size: cover !important;
   background-position: center;
@@ -11,22 +11,33 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  z-index: 0;
 }
 .banner-content {
+  background-image: linear-gradient(-225deg, rgba(0,10,30,0.7) 50%, rgba(0,36,61,0.6) 80%), url('http://res.cloudinary.com/dwkjj7bpb/image/upload/v1503663709/Hanning_recruitment_landing_dwix70.jpg');
+  color: white;
+  text-align: center;
+  height: calc(100vh);
+  width: 100%;
+  background-size: cover !important;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 9000;
   h4 {
     font-style: italic;
     margin-top: 30px;
-    letter-spacing: 1px;
     font-weight: lighter;
     font-size: 20px;
   }
   span {
     color: #ffec3b;
   }
+}
+.wrapper {
+
 }
 .submark-logo {
   width: 200px
