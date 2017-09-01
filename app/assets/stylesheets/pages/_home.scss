@@ -1,6 +1,6 @@
 .menu-circles {
 	position: absolute;
-	bottom: 105px;
+	bottom: 96px;
 	z-index: 3000 !important;
 	display: flex;
 	justify-content: center;
@@ -11,8 +11,8 @@
 	background-color: #243548;
 	border-radius: 50%;
 	border: #243548 solid 2px;
-	width: 150px;
-    height: 150px;
+	width: 120px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,10 +41,11 @@
     h4 {
     	font-style: italic;
 	    margin-top: 30px;
-	    font-size: 20px;
+	    font-size: 22px;
 	    z-index: 20;
 	    margin-top: 70px;
 	    font-weight: lighter;
+	    letter-spacing: 2px;
     }
     span {
 	    color: #ffec3b;

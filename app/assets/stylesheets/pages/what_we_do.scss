@@ -28,10 +28,8 @@
 .what-we-do-left-col {
 	width: 400px;
 	margin-left: 50px;
-	p {
-		color: #1D2C37;
-		font-weight: bold;
-		font-size: 15px;
+	strong {
+		font-size: 17px;
 	}
 }
 .what-we-do-right-col {
@@ -65,21 +63,24 @@
 	}
 	p {
 		position: absolute;
-    top: 93px;
-    left: 30px;
-    width: 180px;
-    text-align: center;
-    color: white;
+	    top: 80px;
+	    left: 30px;
+	    width: 180px;
+	    text-align: center;
+	    color: white;
+	    font-size: 25px;
 	}
   &:hover {
     cursor: pointer;
   }
-
 }
 .sector-circle:hover {
 	img {
 		border: #ffec3b solid 3px;
 	}
+}
+.sector-margin p {
+	margin-top: 20px;
 }
 .sector-more-info {
 	background-color: #243548;
@@ -95,6 +96,10 @@
 	}
 	p, li {
 		color: white;
+		font-size: 15px;
+	}
+	a {
+		color: #ffec3b;
 	}
 }
 

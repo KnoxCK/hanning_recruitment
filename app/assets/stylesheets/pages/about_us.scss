@@ -17,12 +17,8 @@
 .about-us-left-col {
 	width: 400px;
 	margin-left: 50px;
-	p {
-		color: #1D2C37;
-		font-size: 14px;
-	}
 	strong {
-		font-size: 15px;
+		font-size: 16px;
 	}
 }
 .about-us-right-col {
@@ -52,12 +48,11 @@
         border: #ffec3b solid 3px;
       }
 	}
-	p {
-	    top: 93px;
-	    left: 30px;
-	    width: 180px;
-	    text-align: center;
-	    color: white;
+	h5 {
+		font-size: 16px;
+	}
+	h6 {
+		font-size: 13px;
 	}
 }
 .team-circle:hover {

@@ -15,6 +15,13 @@
 	p, li {
 		color: white;
 	}
+	a {
+		color: white;
+	}
+	a:hover {
+		color: #ffec3b;
+		text-decoration: none;
+	}
 }
 .map {
 	img {
