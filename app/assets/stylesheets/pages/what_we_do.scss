@@ -103,6 +103,13 @@
 	}
 }
 
+.sector-individual {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
 
 
 
