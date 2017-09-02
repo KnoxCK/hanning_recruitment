@@ -77,8 +77,12 @@
 	}
 }
 
-
-
+.team-individual {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
 
 
 
