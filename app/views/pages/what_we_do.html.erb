@@ -21,25 +21,25 @@
 		</div>
 		<div class="sector-section">
 			<div class="sector-circles sector-circles-top">
-				<div class="sector-circle">
+				<div class="sector-circle" data-target="">
 					<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1504301876/Asset_9_prltvk.png" %>
 					<div class="sector-title sector-margin">
 						<p>INVESTMENT</p>
 					</div>
 				</div>
-				<div class="sector-circle">
+				<div class="sector-circle" data-target="">
 					<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1504301880/Asset_11_ghyz5z.png" %>
 					<div class="sector-title">
 						<p>ASSET MANAGEMENT</p>
 					</div>
 				</div>
-				<div class="sector-circle">
+				<div class="sector-circle" data-target="">
 					<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1504301875/Asset_12_rt89st.png" %>
 					<div class="sector-title sector-margin">
 						<p>FINANCE</p>
 					</div>
 				</div>
-				<div class="sector-circle">
+				<div class="sector-circle" data-target="">
 					<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1504303233/Asset_2_mkawir.png" %>
 					<div class="sector-title">
 						<p>LAND & DEVELOPMENT</p>
@@ -47,25 +47,25 @@
 				</div>
 			</div>
 			<div class="sector-circles sector-circles-bottom">
-				<div class="sector-circle">
+				<div class="sector-circle" data-target="">
 					<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1504304141/Asset_2_lhflm9.png" %>
 					<div class="sector-title">
 						<p>GENERAL PRACTICE</p>
 					</div>
 				</div>
-				<div class="sector-circle">
+				<div class="sector-circle" data-target="">
 					<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1504301879/Asset_15_ffv8ub.png" %>
 					<div class="sector-title sector-margin">
 						<p>PROP TECH</p>
 					</div>
 				</div>
-				<div class="sector-circle">
+				<div class="sector-circle" data-target="">
 					<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1504301874/Asset_16_ztih7t.png" %>
 					<div class="sector-title sector-margin">
 						<p>CONSTRUCTION</p>
 					</div>
 				</div>
-				<div class="sector-circle">
+				<div class="sector-circle" data-target="">
 					<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1504301875/Asset_17_ojmzly.png" %>
 					<div class="sector-title sector-margin">
 						<p>AGENCY</p>
@@ -74,7 +74,7 @@
 			</div>
 		</div>
 		<div class="sector-more-info">
-			<div class="sector-individual">
+			<div class="sector-individual" id="investment">
 				<h3>Investment</h4>
 				<hr>
 				<p>From funds & consultancies to developers, property companies, institutions and retailers. Typical roles include:
@@ -87,7 +87,7 @@
 				</p>
 				<p><%= link_to "Contact us", contact_path %> for a confidential call back</p>
 			</div>
-			<div class="sector-individual hidden">
+			<div class="sector-individual hidden" id="ass-man">
 				<h3>Asset Management</h4>
 				<hr>
 				<p>From funds & consultancies to developers, property companies, institutions and retailers. Typical roles include:
@@ -100,7 +100,7 @@
 				</p>
 				<p><%= link_to "Contact us", contact_path %> for a confidential call back</p>
 			</div>
-			<div class="sector-individual hidden">
+			<div class="sector-individual hidden" id="finance">
 				<h3>Finance</h4>
 				<hr>
 				<p>From funds & consultancies to developers, property companies, institutions and retailers. Typical roles include:
@@ -113,7 +113,7 @@
 				</p>
 				<p><%= link_to "Contact us", contact_path %> for a confidential call back</p>
 			</div>
-			<div class="sector-individual hidden">
+			<div class="sector-individual hidden" id="land-dev">
 				<h3>Land & Development</h4>
 				<hr>
 				<p>From funds & consultancies to developers, property companies, institutions and retailers. Typical roles include:
@@ -126,7 +126,7 @@
 				</p>
 				<p><%= link_to "Contact us", contact_path %> for a confidential call back</p>
 			</div>
-			<div class="sector-individual hidden">
+			<div class="sector-individual hidden" id="gen-prac">
 				<h3>General Practice</h4>
 				<hr>
 				<p>From funds & consultancies to developers, property companies, institutions and retailers. Typical roles include:
@@ -139,7 +139,7 @@
 				</p>
 				<p><%= link_to "Contact us", contact_path %> for a confidential call back</p>
 			</div>
-			<div class="sector-individual hidden">
+			<div class="sector-individual hidden" id="prop-tech">
 				<h3>Prop Tech</h4>
 				<hr>
 				<p>From funds & consultancies to developers, property companies, institutions and retailers. Typical roles include:
@@ -152,7 +152,7 @@
 				</p>
 				<p><%= link_to "Contact us", contact_path %> for a confidential call back</p>
 			</div>
-			<div class="sector-individual hidden">
+			<div class="sector-individual hidden" id="construction">
 				<h3>Construction</h4>
 				<hr>
 				<p>From funds & consultancies to developers, property companies, institutions and retailers. Typical roles include:
@@ -165,7 +165,7 @@
 				</p>
 				<p><%= link_to "Contact us", contact_path %> for a confidential call back</p>
 			</div>
-			<div class="sector-individual hidden">
+			<div class="sector-individual hidden" id="agency">
 				<h3>Agency</h4>
 				<hr>
 				<p>From funds & consultancies to developers, property companies, institutions and retailers. Typical roles include:
