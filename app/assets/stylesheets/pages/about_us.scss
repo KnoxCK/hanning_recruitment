@@ -75,6 +75,13 @@
 	p, li {
 		color: white;
 	}
+  i {
+    color: #ffec3b;
+    float: right;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .team-individual {

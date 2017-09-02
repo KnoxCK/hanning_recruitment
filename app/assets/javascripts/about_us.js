@@ -9,4 +9,8 @@ $(document).ready(function(){
       scrollTop: $(".team-more-info").offset().top - 100},
       1000);
   });
+
+  $(".team-individual i").on("click", function() {
+    $(".team-individual").removeClass("active");
+  });
 });
