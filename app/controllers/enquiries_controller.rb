@@ -1,8 +1,12 @@
 class EnquiriesController < ApplicationController
   def create
-    @enquiry = Enquiry.create(enquiry_params)
-    EnquiryMailer.enquiry_received(@enquiry).deliver_now
-    redirect_to contact_path({message: "Your enquiry has been sent"})
+    @enquiry = Enquiry.new(enquiry_params)
+    if @enquiry.save
+      EnquiryMailer.enquiry_received(@enquiry).deliver_now
+      redirect_to contact_path({message: "Your enquiry has been sent"})
+    else
+      redirect_to contact_path({message: "You must provide an email address and a message"})
+    end
   end
 
   private
