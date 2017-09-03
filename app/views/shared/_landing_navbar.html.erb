@@ -1,3 +1,29 @@
+<div class="register-dropdown hidden">
+<br></br>
+ <div class="register-box">
+    <div class="register-details">
+      <div class="register-details-left">
+        <p>Hanning Recruitment<br>
+        17 Clifford Street<br>
+        Mayfair<br>
+        London<br>
+        W1S 3RQ</p>
+      </div>
+      <div class="register-details-right">
+        <p><a href="tel:+44-203-034-0099">+44 (0)20 3034 0099</a><br>
+        <a href="tel:+44-753-525-5726">+44 (0)7535 255726</a><br>
+        <a href="mailto:info@hanningrecruitment.com">info@hanningrecruitment.com</a><br>
+        </p>
+      </div>
+    </div>
+    <div class="register-form">
+      <p>Name</p>
+      <p>Email</p>
+      <p>Phone</p>
+      <%= link_to ("Upload CV"), "", class: "btn" %>
+    </div>
+  </div>
+</div>
 <div class="landing-hanning navbar-hanning-fixed fadeIn hidden">
   <!-- Logo -->
   <%= link_to root_path, class: "landing-hanning-brand" do %>
@@ -8,7 +34,12 @@
   <!-- Right Navigation -->
   <div class="landing-hanning-right hidden-xs hidden-sm">
 
-    <%= link_to "Register", "", class: "btn btn-register" %>
+    <div class="register">
+        <%= link_to ("Register"), "#", class: "btn btn-register" %>
+      </div>
+      <div class="register-close">
+        <%= link_to ("Close"), "#", class: "btn btn-register btn-register-close hidden" %>
+      </div>
 
   </div>
 
