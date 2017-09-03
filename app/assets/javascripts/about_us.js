@@ -14,7 +14,6 @@ $(document).ready(function(){
     $('html,body').animate({
       scrollTop: $(".banner-small").offset().top},
       1000);
-    // $(".page-content").scrollTop(1000);
     window.setTimeout(function (){
       $(".team-individual").removeClass("active")},
        1000);
