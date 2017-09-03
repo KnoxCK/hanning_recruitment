@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'enquiries/create'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   root to: 'pages#home'
@@ -7,4 +9,7 @@ Rails.application.routes.draw do
   get 'live_roles', to: 'pages#live_roles'
   get 'news', to: 'pages#news'
   get 'contact', to: 'pages#contact'
+
+  resources :enquiries, only: [:create]
+
 end
