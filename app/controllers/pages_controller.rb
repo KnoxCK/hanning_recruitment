@@ -17,5 +17,6 @@ class PagesController < ApplicationController
   end
 
   def contact
+    @enquiry = Enquiry.new
   end
 end
