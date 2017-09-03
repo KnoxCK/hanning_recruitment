@@ -11,6 +11,12 @@ $(document).ready(function(){
   });
 
   $(".team-individual i").on("click", function() {
-    $(".team-individual").removeClass("active");
+    $('html,body').animate({
+      scrollTop: $(".banner-small").offset().top},
+      1000);
+    // $(".page-content").scrollTop(1000);
+    window.setTimeout(function (){
+      $(".team-individual").removeClass("active")},
+       1000);
   });
 });
