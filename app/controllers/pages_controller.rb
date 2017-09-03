@@ -17,8 +17,7 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @enquiry = Enquiry.new
+    @enquiry = params[:enquiry] ? params[:enquiry] : Enquiry.new
     @message = params[:message]
-    # @enquiry.errors = params[:errors]
   end
 end

@@ -5,8 +5,7 @@ class EnquiriesController < ApplicationController
       EnquiryMailer.enquiry_received(@enquiry).deliver_now
       redirect_to contact_path({message: "Your enquiry has been sent"})
     else
-      binding.pry
-      redirect_to contact_path({errors: @enquiry.errors})
+      redirect_to contact_path({enquiry: @enquiry})
     end
   end
 
