@@ -39,15 +39,16 @@
   form {
     width: 400px;
     color: #ffec3b;
-    margin-top: 30px;
+    margin-top: 70px;
     input {
       height: 30px;
       font-size: 14px;
       font-weight: 200;
     }
-    label {
-      font-size: 12px;
+    textarea {
+      font-size: 14px;
       font-weight: 200;
+      height: 100px
     }
   }
   .form-group {
