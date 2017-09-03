@@ -49,6 +49,11 @@
       </div>
   </div>
 
+  <% if user_signed_in? %>
+    <%= link_to destroy_user_session_path, method: :delete, class: "sign-out" do %>
+      <i class="fa fa-power-off" aria-hidden="true"></i>
+    <% end %>
+  <% end %>
   <!-- Dropdown list appearing on mobile only -->
   <div class="navbar-hanning-item hidden-md hidden-lg">
     <div class="dropdown">
