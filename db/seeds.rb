@@ -11,4 +11,4 @@ User.destroy_all
 Category.create(name: "Commercial")
 Category.create(name: "Residential")
 
-User.create(email: "admin@hanning.com", password: "Hanning1", admin: true)
+User.create(email: "admin@hanning.com", password: "Hanning1!", admin: true)
