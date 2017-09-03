@@ -29,7 +29,28 @@
 						<h6>Description</h6>
 					</div>
 				</div>
-				<div class="job-role live-job">
+
+
+        <% @live_roles.each do |role| %>
+          <div class="job-role live-job" data-target=<%= "##{role.id}" %>>
+            <div class="job-title">
+            <p><%= role.title %></p>
+            </div>
+            <div class="job-sector">
+            <p><%= role.sector %></p>
+            </div>
+            <div class="job-salary">
+            <p><%= role.salary %></p>
+            </div>
+            <div class="job-package">
+            <p><%= role.package %></p>
+            </div>
+            <div class="job-description">
+            <p><%= role.company %></p>
+            </div>
+          </div>
+          <% end %>
+				<!-- <div class="job-role live-job">
 					<div class="job-title">
 						<p>Senior Development Manager</p>
 					</div>
@@ -45,7 +66,7 @@
 					<div class="job-description">
 						<p>A top-tier private equity company</p>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 

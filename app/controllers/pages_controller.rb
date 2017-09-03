@@ -11,6 +11,7 @@ class PagesController < ApplicationController
   end
 
   def live_roles
+    @live_roles = LiveRole.all
   end
 
   def news
