@@ -5,7 +5,7 @@ class EnquiriesController < ApplicationController
       EnquiryMailer.enquiry_received(@enquiry).deliver_now
       redirect_to contact_path({message: "Your enquiry has been sent"})
     else
-      redirect_to contact_path({enquiry: @enquiry})
+      redirect_to contact_path({message: "You must provide an email address and a message"})
     end
   end
 
