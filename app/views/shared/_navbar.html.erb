@@ -19,7 +19,7 @@
 
   <% if user_signed_in? %>
     <%= link_to destroy_user_session_path, method: :delete, class: "sign-out" do %>
-      <i class="material-icons">power_settings_new</i>
+      <i class="fa fa-power-off" aria-hidden="true"></i>
     <% end %>
   <% end %>
   <!-- Dropdown list appearing on mobile only -->
