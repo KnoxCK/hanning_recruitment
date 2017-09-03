@@ -1,8 +1,8 @@
 <%= simple_form_for @enquiry do |f| %>
   <%= f.error_notification %>
-  <%= f.input :name %>
-  <%= f.input :tel %>
-  <%= f.input :email %>
-  <%= f.input :body, label: "Message" %>
-  <%= f.button :submit %>
+  <%= f.input :name, label: false, placeholder: "Name" %>
+  <%= f.input :tel, label: false, placeholder: "Telephone" %>
+  <%= f.input :email, label: false, placeholder: "Email" %>
+  <%= f.input :body, label: false, placeholder: "Enquiry" %>
+  <%= f.button :submit, "Send Enquiry" %>
 <% end %>
