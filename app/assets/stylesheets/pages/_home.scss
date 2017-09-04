@@ -10,7 +10,7 @@
 	margin: 0 20px;
 	background-color: #243548;
 	border-radius: 50%;
-	border: #243548 solid 2px;
+	border: #E4E4E4 solid 2px;
 	width: 120px;
     height: 120px;
     display: flex;
@@ -51,3 +51,21 @@
 	    color: #ffec3b;
 	}
 }
+
+@media only screen and (max-width: 1200px) {
+	.page-content {
+		width: 800px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
