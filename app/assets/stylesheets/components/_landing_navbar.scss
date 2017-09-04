@@ -98,3 +98,8 @@
 .toggle-blue {
   color: #243548;
 }
+@media only screen and (max-width: 400px) {
+  .landing-hanning-logo {
+    display: none;
+  }
+}

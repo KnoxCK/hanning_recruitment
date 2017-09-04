@@ -18,13 +18,6 @@
       </div>
     </div>
     <div class="register-form">
-<<<<<<< HEAD
-      <p>Name</p>
-      <p>Email</p>
-      <p>Phone</p>
-      <%= link_to ("Upload CV"), "", class: "btn btn-upload-blue" %><br>
-      <%= link_to ("Submit"), "", class: "btn btn-submit-yellow hidden" %>
-=======
        <%= simple_form_for @job_application do |a| %>
         <%= a.input :name %>
         <%= a.input :email %>
@@ -32,7 +25,6 @@
         <%= a.input :cv %>
         <%= a.submit "Submit" %>
       <% end %>
->>>>>>> 6fa1e536485044678c5ddd2db75137381ccfab76
     </div>
   </div>
 </div>
