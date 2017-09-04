@@ -9,10 +9,43 @@
 	font-weight: lighter;
 	font-size: 15px;
 	letter-spacing: 0.5px;
+	padding-top: 8px;
 }
 .btn-register:hover {
-	opacity: 0.7;
 	text-decoration: none;
+}
+.btn-upload-blue {
+	background-color: #1b3447;
+	color: #f4f4f4;
+	width: 200px;
+	font-size: 15px;
+}
+.btn-upload-blue:hover {
+	color: #e3e3e3;
+}
+.btn-submit-yellow {
+	color: #1b3447;
+	background-color: #ffec3b;
+	width: 200px;
+	font-size: 15px;
+}
+.btn-submit-yellow:hover {
+	opacity: 0.7;
+}
+.btn-submit-contact {
+	color: #1b3447;
+	background-color: #ffec3b;
+	border-color: #ffec3b;
+	width: 400px;
+	padding: 10px;
+	font-size: 15px;
+	font-weight: lighter;
+    letter-spacing: 0.5px;
+}
+.btn-submit-contact:hover {
+	background-color: #1b3447;
+	border-color: #ffec3b;
+	color: #f4f4f4;
 }
 .btn-filter {
 	text-decoration: none;
