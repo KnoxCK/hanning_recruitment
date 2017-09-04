@@ -52,6 +52,11 @@
   width: 100%;
   margin-top: 3px;
 }
+@media only screen and (max-width: 980px) {
+  .banner {
+    height: 70vh;
+  }
+}
 @media only screen and (max-width: 462px) {
   .main-logo {
     width: 300px;

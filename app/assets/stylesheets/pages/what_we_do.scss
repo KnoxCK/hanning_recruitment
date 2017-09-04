@@ -50,7 +50,6 @@
 	justify-content: center;
 }
 .sector-circle {
-	position: relative;
 	img {
 		border-radius: 50%;
 	    height: 200px;
@@ -63,7 +62,7 @@
 	}
 	p {
 		position: absolute;
-	    top: 80px;
+	    bottom: 75px;
 	    left: 30px;
 	    width: 180px;
 	    text-align: center;
@@ -79,8 +78,11 @@
 		border: #ffec3b solid 3px;
 	}
 }
+.sector-title {
+	position: relative;
+}
 .sector-margin p {
-	margin-top: 20px;
+	margin-bottom: 27px;
 }
 .sector-more-info {
 	background-color: #243548;
