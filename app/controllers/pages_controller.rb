@@ -12,6 +12,7 @@ class PagesController < ApplicationController
 
   def live_roles
     @live_roles = LiveRole.all
+    @job_application = JobApplication.new
   end
 
   def news

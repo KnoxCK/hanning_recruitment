@@ -12,11 +12,9 @@
   width: 100%;
   z-index: 2000;
 }
-
 .nav-container {
   position: fixed;
 }
-
 /* Logo */
 .navbar-hanning-submark {
   height: 87px;
@@ -126,6 +124,13 @@
 @media only screen and (max-width: 991px) {
   .navbar-hanning {
     justify-content: space-between;
+  }
+  .navbar-hanning-submark {
+    border: #FBE954 solid 2px;
+    position: absolute;
+    left: 20px;
+    top: 4px;
+    height: 60px;
   }
 }
 

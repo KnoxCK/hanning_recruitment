@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'job_applications/create'
+
   get 'enquiries/create'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
@@ -11,5 +13,6 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
 
   resources :enquiries, only: [:create]
+  resources :job_applications, only: [:create]
 
 end
