@@ -38,11 +38,13 @@
 	p {
 		font-size: 15px;
 	}
-  &#commercial:hover {
-    background-color: #1b3447;
-    cursor: pointer;
-    &:nth-child h6 {
-    color: #d6d6d6;
+  &#commercial {
+    &:hover {
+      background-color: #1b3447;
+      cursor: pointer;
+      p {
+        color: #d6d6d6;
+      }
     }
   }
   &#residential:hover {
