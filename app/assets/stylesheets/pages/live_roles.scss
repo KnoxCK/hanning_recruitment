@@ -40,8 +40,10 @@
 	}
   &#commercial:hover {
     background-color: #1b3447;
-    color: #d6d6d6;
     cursor: pointer;
+    &:nth-child h6 {
+    color: #d6d6d6;
+    }
   }
   &#residential:hover {
     background-color: #ffec3b;
