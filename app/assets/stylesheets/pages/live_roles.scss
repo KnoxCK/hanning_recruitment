@@ -38,6 +38,19 @@
 	p {
 		font-size: 15px;
 	}
+  &#commercial {
+    &:hover {
+      background-color: #1b3447;
+      cursor: pointer;
+      p {
+        color: #d6d6d6;
+      }
+    }
+  }
+  &#residential:hover {
+    background-color: #ffec3b;
+    cursor: pointer;
+  }
 }
 .live-job {
 	background-color: #f4f4f4;
