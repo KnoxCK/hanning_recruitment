@@ -76,16 +76,15 @@
 
 
 
-
-    <% @live_roles.each do |role| %>
-      <div class="live-roles-more-info" id="<%= role.id %>">
-        <h3><%= role.title %></h3>
-        <hr>
-        <p><%= role.role %></p>
-      </div>
-
-
-
+    <div class="live-roles-more-info-wrapper">
+      <% @live_roles.each do |role| %>
+        <div class="live-roles-more-info" id="<%= role.id %>">
+          <h3><%= role.title %></h3>
+          <hr>
+          <p><%= role.role %></p>
+        </div>
+      <% end %>
+    </div>
 
 		<!-- <div class="live-roles-more-info">
 			<h3>Senior Development Manager</h3>
