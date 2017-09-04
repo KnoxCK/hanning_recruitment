@@ -33,7 +33,6 @@
 
 	}
 }
-
 .contact-form {
   color: #ffec3b;
   font-size: 14px;
@@ -71,7 +70,6 @@
 		flex-direction: column;
 		padding-left: 60px;
 		padding-right: 60px;
-
 	}
 }
 @media only screen and (max-width: 518px) {
@@ -95,6 +93,14 @@
 		}	    
   	}
 }
+@media only screen and (max-width: 386px) {
+	.contact-box {
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
 
 
 
