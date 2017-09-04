@@ -15,10 +15,12 @@
 
 /* Logo */
 .navbar-hanning-submark {
-  height: 90px;
+  height: 87px;
   position: absolute;
   left: 50px;
-  top: -10px;
+  top: -9px;
+  border: #F4F4F4 solid 9px;
+  border-radius: 50%;
 }
 .navbar-hanning-fixed {
   position: fixed;
@@ -112,11 +114,17 @@
 .toggle-yellow {
   color: #FBE954;
 }
+@media only screen and (max-width: 1389px) {
+  .navbar-hanning-submark {
+    border: white solid 8px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .navbar-hanning {
     justify-content: space-between;
   }
 }
+
 
 
 
