@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
 
   resources :enquiries, only: [:create]
+  resources :job_application, only: [:create]
 
 end
