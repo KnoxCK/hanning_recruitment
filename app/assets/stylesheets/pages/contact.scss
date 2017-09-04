@@ -58,6 +58,43 @@
   //   margin-bottom: 5px;
   // }
 }
+@media only screen and (max-width: 1354px) {
+  .map img {
+    width: 100%;
+  }
+  .contact-box {
+  	padding-right: 0;
+  }
+}
+@media only screen and (max-width: 774px) {
+	.contact-box {
+		flex-direction: column;
+		padding-left: 60px;
+		padding-right: 60px;
+
+	}
+}
+@media only screen and (max-width: 518px) {
+	.contact-form {
+		  form {
+		    width: auto;
+		    color: #ffec3b;
+		    margin-top: 37px;
+		    input {
+		      height: 40px;
+		      font-size: 15px;
+		      font-weight: 200;
+		      margin-top: -8px;
+		    }
+		    textarea {
+		      font-size: 14px;
+		      font-weight: 200;
+		      height: 85px;
+		      margin-top: -8px;
+		    }
+		}	    
+  	}
+}
 
 
 
