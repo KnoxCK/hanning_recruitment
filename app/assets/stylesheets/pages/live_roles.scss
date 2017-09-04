@@ -73,6 +73,7 @@
 	height: auto;
 	width: 100%;
 	padding: 45px 150px;
+  display: none;
 	h3 {
 		color: #d6d6d6;
 		font-style: italic;
@@ -83,6 +84,9 @@
 	p, li {
 		color: white;
 	}
+  &.active {
+    display: block;
+  }
 }
 
 
