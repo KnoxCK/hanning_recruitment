@@ -81,8 +81,15 @@
         <div class="live-roles-more-info" id="<%= role.id %>">
           <h3><%= role.title %></h3>
           <hr>
-          <p><%= role.role %></p>
+          <p>Sector: <%= role.sector %></p>
+          <p>Salary: <%= role.salary %></p>
+          <p>Package: <%= role.package %></p>
+          <p>Company: <%= role.company %></p>
+          <p>Location: <%= role.location %></p>
+          <p>Role: <%= role.role %></p>
+          <button class="apply-now">Apply Now</button>
         </div>
+
       <% end %>
     </div>
 
