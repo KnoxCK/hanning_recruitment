@@ -1,76 +1,76 @@
-<div class="register-dropdown">
- <div class="register-box">
-    <div class="register-details">
-      <div class="register-details-left">
-        <h2>Register</h2>
+
+<div class="nav-container">
+  <div class="register-dropdown">
+    <div class="register-box">
+      <div class="register-details">
+        <div class="register-details-left">
+          <p>17 Clifford Street<br>
+          Mayfair<br>
+          London<br>
+          W1S 3RQ</p>
+        </div>
+        <div class="register-details-right">
+          <p><a href="tel:+44-203-034-0099">+44 (0)20 3034 0099</a><br>
+          <a href="tel:+44-753-525-5726">+44 (0)7535 255726</a><br>
+          <a href="mailto:info@hanningrecruitment.com">info@hanningrecruitment.com</a><br>
+          </p>
+        </div>
       </div>
-      <div class="register-details-middle">
-        <p>17 Clifford Street<br>
-        Mayfair<br>
-        London<br>
-        W1S 3RQ</p>
-      </div>
-      <div class="register-details-right">
-        <p><a href="tel:+44-203-034-0099">+44 (0)20 3034 0099</a><br>
-        <a href="tel:+44-753-525-5726">+44 (0)7535 255726</a><br>
-        <a href="mailto:info@hanningrecruitment.com">info@hanningrecruitment.com</a><br>
-        </p>
+      <div class="register-form">
+        <p>Name</p>
+        <p>Email</p>
+        <p>Phone</p>
+        <%= link_to ("Upload CV"), "", class: "btn" %><br>
+        <%= link_to ("Submit"), "", class: "btn btn-submit-yellow hidden" %>
       </div>
     </div>
-    <div class="register-form">
-      <p>Name</p>
-      <p>Email</p>
-      <p>Phone</p>
-      <%= link_to ("Upload CV"), "", class: "btn btn-upload-blue" %><br>
-      <%= link_to ("Submit"), "", class: "btn btn-submit-yellow hidden" %>
-    </div>
   </div>
-</div>
+  <div class="navbar-hanning">
 
-<div class="navbar-hanning">
-
-  <!-- Logo -->
-  <%= link_to root_path, class: "navbar-hanning-brand" do %>
-    <%= image_tag "Hanning_Submark_RGB_Yellow.png", class: "navbar-hanning-submark" %>
-  <% end %>
-
-
-  <!-- Right Navigation -->
-  <div class="navbar-hanning-right hidden-xs hidden-sm">
-    <div class="navbar-links ">
-        <h6><%= link_to "What We Do", what_we_do_path %></h6>
-        <h6><%= link_to "About Us", about_us_path %></h6>
-        <h6><%= link_to "Live Roles", live_roles_path %></h6>
-        <!-- <h6><%= link_to "News", news_path %></h6> -->
-        <h6><%= link_to "Contact", contact_path %></h6>
-      </div>
-      <div class="register">
-        <%= link_to ("Register"), "#", class: "btn btn-register" %>
-      </div>
-      <div class="register-close">
-        <%= link_to ("Close"), "#", class: "btn btn-register btn-register-close hidden" %>
-      </div>
-  </div>
-
-  <% if user_signed_in? %>
-    <%= link_to destroy_user_session_path, method: :delete, class: "sign-out" do %>
-      <i class="fa fa-power-off" aria-hidden="true"></i>
+    <!-- Logo -->
+    <%= link_to root_path, class: "navbar-hanning-brand" do %>
+      <%= image_tag "Hanning_Submark_RGB_Yellow.png", class: "navbar-hanning-submark" %>
     <% end %>
-  <% end %>
-  <!-- Dropdown list appearing on mobile only -->
-  <div class="navbar-hanning-item hidden-md hidden-lg">
-    <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle toggle-yellow" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-hanning-dropdown-menu">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "What We Do", what_we_do_path %></li>
-        <li><%= link_to "About Us", about_us_path %></li>
-        <li><%= link_to "Live Roles", live_roles_path %></li>
-        <!-- <li><%= link_to "News", news_path %></li> -->
-        <li><%= link_to "Contact", contact_path %></li>
-      </ul>
+
+
+    <!-- Right Navigation -->
+    <div class="navbar-hanning-right hidden-xs hidden-sm">
+      <div class="navbar-links ">
+          <h6><%= link_to "What We Do", what_we_do_path %></h6>
+          <h6><%= link_to "About Us", about_us_path %></h6>
+          <h6><%= link_to "Live Roles", live_roles_path %></h6>
+          <h6><%= link_to "News", news_path %></h6>
+          <h6><%= link_to "Contact", contact_path %></h6>
+        </div>
+        <div class="register">
+          <%= link_to ("Register"), "#", class: "btn btn-register" %>
+        </div>
+        <div class="register-close">
+          <%= link_to ("Close"), "#", class: "btn btn-register btn-register-close hidden" %>
+        </div>
+    </div>
+
+
+    <% if user_signed_in? %>
+      <%= link_to destroy_user_session_path, method: :delete, class: "sign-out" do %>
+        <i class="fa fa-power-off" aria-hidden="true"></i>
+      <% end %>
+    <% end %>
+    <!-- Dropdown list appearing on mobile only -->
+    <div class="navbar-hanning-item hidden-md hidden-lg">
+      <div class="dropdown">
+        <i class="fa fa-bars dropdown-toggle toggle-yellow" data-toggle="dropdown"></i>
+        <ul class="dropdown-menu dropdown-menu-right navbar-hanning-dropdown-menu">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "What We Do", what_we_do_path %></li>
+          <li><%= link_to "About Us", about_us_path %></li>
+          <li><%= link_to "Live Roles", live_roles_path %></li>
+          <li><%= link_to "News", news_path %></li>
+          <li><%= link_to "Contact", contact_path %></li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </div>
-
 
