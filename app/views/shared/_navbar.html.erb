@@ -17,11 +17,13 @@
         </div>
       </div>
       <div class="register-form">
-        <p>Name</p>
-        <p>Email</p>
-        <p>Phone</p>
-        <%= link_to ("Upload CV"), "", class: "btn" %><br>
-        <%= link_to ("Submit"), "", class: "btn btn-submit-yellow hidden" %>
+        <%= simple_form_for @job_application do |a| %>
+          <%= a.input :name %>
+          <%= a.input :email %>
+          <%= a.input :phone %>
+          <%= a.input :cv %>
+          <%= a.submit "Submit" %>
+        <% end %>
       </div>
     </div>
   </div>

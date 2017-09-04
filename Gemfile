@@ -18,6 +18,8 @@ gem 'simple_form'
 gem 'uglifier'
 
 gem 'postmark-rails'
+gem 'cloudinary'
+gem 'carrierwave', '~> 0.11.2'
 
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
