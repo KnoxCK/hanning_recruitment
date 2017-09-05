@@ -120,6 +120,24 @@
 	.live-roles-more-info {
 	    padding: 15px 30px;
 	}
+	.page-content {
+		width: auto;
+	}
+	.job-title {
+		width: auto;
+	}
+	.job-sector {
+		width: auto;
+	}
+	.job-salary {
+		width: auto;
+	}
+	.job-package {
+		width: auto;
+	}
+	.job-description {
+		width: auto;
+	}
 }
 @media only screen and (max-width: 358px) {
     .live-roles-filters {
@@ -130,6 +148,7 @@
     .job-title {
     	padding-left: 0px;
     }
+
 }
 	
 
