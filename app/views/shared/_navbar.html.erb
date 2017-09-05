@@ -3,6 +3,9 @@
     <div class="register-box">
       <div class="register-details">
         <div class="register-details-left">
+          <h2>Register</h2>
+        </div>
+        <div class="register-details-middle">
           <p>17 Clifford Street<br>
           Mayfair<br>
           London<br>
@@ -33,14 +36,13 @@
       <%= image_tag "Hanning_Submark_RGB_Yellow.png", class: "navbar-hanning-submark" %>
     <% end %>
 
-
     <!-- Right Navigation -->
     <div class="navbar-hanning-right hidden-xs hidden-sm">
       <div class="navbar-links ">
           <h6><%= link_to "What We Do", what_we_do_path %></h6>
           <h6><%= link_to "About Us", about_us_path %></h6>
           <h6><%= link_to "Live Roles", live_roles_path %></h6>
-          <h6><%= link_to "News", news_path %></h6>
+          <!-- <h6><%= link_to "News", news_path %></h6> -->
           <h6><%= link_to "Contact", contact_path %></h6>
         </div>
         <div class="register">
@@ -51,12 +53,12 @@
         </div>
     </div>
 
-
     <% if user_signed_in? %>
       <%= link_to destroy_user_session_path, method: :delete, class: "sign-out" do %>
         <i class="fa fa-power-off" aria-hidden="true"></i>
       <% end %>
     <% end %>
+
     <!-- Dropdown list appearing on mobile only -->
     <div class="navbar-hanning-item hidden-md hidden-lg">
       <div class="dropdown">
@@ -66,11 +68,10 @@
           <li><%= link_to "What We Do", what_we_do_path %></li>
           <li><%= link_to "About Us", about_us_path %></li>
           <li><%= link_to "Live Roles", live_roles_path %></li>
-          <li><%= link_to "News", news_path %></li>
+          <!-- <li><%= link_to "News", news_path %></li> -->
           <li><%= link_to "Contact", contact_path %></li>
         </ul>
       </div>
-
     </div>
   </div>
 </div>
