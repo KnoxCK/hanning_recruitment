@@ -30,7 +30,8 @@
 }
 .register-form {
 	margin-top: 40px;
-	padding-left: 40px;
+	padding-left: 80px;
+
   p {
   	color: #D6D6D6;
   	border: 1px #D6D6D6 solid;
@@ -41,9 +42,15 @@
     width: 200px;
     font-size: 14px;
   }
+  button {
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 15px;
+  }
   form {
     width: 400px;
-    margin-top: 37px;
+    margin: 30px auto 0px;
     input {
       height: 40px;
       font-size: 15px;
@@ -74,7 +81,13 @@
 }
 
 .modal {
-  margin-top: 40px;
+  margin-top: 70px;
+}
+.modal-header {
+  height: 60px;
+  button {
+    display: none;
+  }
 }
 
 
