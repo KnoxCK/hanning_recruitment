@@ -87,10 +87,10 @@
           <p>Company: <%= role.company %></p>
           <p>Location: <%= role.location %></p>
           <p>Role: <%= role.role %></p>
-          <button class="apply-now" data-toggle="modal" data-target=<%= "#role#{role.id}" %>>Apply Now</button>
+          <button class="apply-now btn" data-toggle="modal" data-target=<%= "#role#{role.id}" %>>Apply Now</button>
         </div>
         <div class="modal fade" id=<%= "role#{role.id}" %> tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog register-form" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Apply Now</h5>
@@ -100,16 +100,16 @@
               </div>
               <div class="modal-body">
                 <%= simple_form_for @job_application do |a| %>
-                <%= a.input :name %>
-                <%= a.input :email %>
-                <%= a.input :phone %>
+                <%= a.input :name, label: false, placeholder: "Name" %>
+                <%= a.input :email, label: false, placeholder: "Email" %>
+                <%= a.input :phone, label: false, placeholder: "Phone" %>
                 <%= hidden_field_tag :role_id, role.id %>
                 <%= a.input :cv, label: "CV" %>
 
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <%= a.submit "Submit" %>
+                <button type="button" class="btn btn-commercial" data-dismiss="modal">Close</button>
+                <%= a.submit "Submit", class: "btn btn-register-form" %>
                 <% end %>
               </div>
             </div>
