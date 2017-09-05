@@ -1,5 +1,9 @@
-.faded-logo img {
-	height: 100vh;
+.faded-logo {
+	position: fixed;
+    z-index: 200;
+	img {
+		height: 100vh;
+	}
 }
 .menu-circles {
 	position: absolute;
