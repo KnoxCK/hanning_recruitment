@@ -12,3 +12,5 @@ Category.create(name: "Commercial")
 Category.create(name: "Residential")
 
 User.create(email: "admin@hanning.com", password: "Hanning1!", admin: true)
+
+LiveRole.create(title: "", sector: "", salary: "", package: "", company: "", location: "", role:"A boutique Investment and Development company that has a strong track record of dealing with both commercial and residential led developments is looking for a Land Buyer with a proven track record to join their well regarded team.", category_id: 1)
