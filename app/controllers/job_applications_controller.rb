@@ -1,4 +1,6 @@
 class JobApplicationsController < ApplicationController
+  skip_before_action :authenticate_user!
+
   def create
     # binding.pry
     @job_application = JobApplication.new(job_application_params)
@@ -7,6 +9,9 @@ class JobApplicationsController < ApplicationController
       flash[:notice] = "Thank you, your application has been sent. We will be in touch"
       JobApplicationMailer.job_application(@job_application).deliver_now
       redirect_to live_roles_path
+    else
+      flash[:alert] = "You must upload a CV"
+      redirect_to :back
     end
   end
 

@@ -19,12 +19,12 @@
     </div>
     <div class="register-form">
        <%= simple_form_for @job_application do |a| %>
-        <%= a.input :name %>
-        <%= a.input :email %>
-        <%= a.input :phone %>
-        <%= a.input :cv %>
-        <%= a.submit "Submit" %>
-      <% end %>
+          <%= a.input :name, label: false, placeholder: "Name" %>
+          <%= a.input :email, label: false, placeholder: "Email" %>
+          <%= a.input :phone, label: false, placeholder: "Phone" %>
+          <%= a.input :cv, label: "Upload CV" %>
+          <%= a.submit "Register", class: "btn btn-register-form" %>
+        <% end %>
     </div>
   </div>
 </div>
