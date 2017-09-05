@@ -109,6 +109,7 @@
 @media only screen and (max-width: 542px) {
     .job-role {
  		flex-direction: column;
+ 		padding-left: 15px;
     }
 
     .job-title {
@@ -128,9 +129,6 @@
     }
     .job-title {
     	padding-left: 0px;
-    	h6 {
-    		display: none;
-    	}
     }
 }
 	
