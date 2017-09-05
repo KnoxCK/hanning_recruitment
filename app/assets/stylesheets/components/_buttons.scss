@@ -10,6 +10,9 @@
 	font-size: 15px;
 	letter-spacing: 0.5px;
 	padding-top: 8px;
+
+	display: none;
+
 }
 .btn-register:hover {
 	text-decoration: none;
@@ -69,6 +72,8 @@
   &:hover {
     color: #d6d6d6;
   }
+
+  display: none;
 }
 .btn-commercial:hover {
 	color: #f4f4f4;
@@ -77,6 +82,8 @@
 	color: #1b3447;
 	background-color: #ffec3b;
 	border-color: #ffec3b;
+
+	display: none;
 }
 @media only screen and (max-width: 518px) {
 	.btn-submit-contact {
