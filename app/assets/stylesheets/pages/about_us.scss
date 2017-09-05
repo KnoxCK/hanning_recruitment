@@ -60,6 +60,18 @@
 		border: #ffec3b solid 3px;
 	}
 }
+.about-us-logos-wrapper {
+	display: flex;
+    justify-content: center;
+    background-color: #e4e4e4;
+}
+.about-us-logos {
+	img {
+	    height: 55px;
+	    /* width: 191px; */
+	    margin: 30px 20px;
+	}
+}
 .team-more-info {
 	background-color: #243548;
 	height: auto;
@@ -123,6 +135,12 @@
    	.team-more-info {
 	    padding: 45px 80px;
 	}
+}
+@media only screen and (max-width: 828px) {
+	.about-us-logos {
+		display: flex;
+    	flex-direction: column;
+   	}
 }
 @media only screen and (max-width: 552px) {
 	.page-content {
