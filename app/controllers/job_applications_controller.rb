@@ -9,6 +9,9 @@ class JobApplicationsController < ApplicationController
       flash[:notice] = "Thank you, your application has been sent. We will be in touch"
       JobApplicationMailer.job_application(@job_application).deliver_now
       redirect_to live_roles_path
+    else
+      flash[:alert] = "You must upload a CV"
+      redirect_to :back
     end
   end
 
