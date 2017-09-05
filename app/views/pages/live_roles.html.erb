@@ -82,7 +82,7 @@
           <p>Company: <%= role.company %></p>
           <p>Location: <%= role.location %></p>
           <p>Role: <%= simple_format role.role %></p>
-          <button class="apply-now btn" data-toggle="modal" data-target=<%= "#role#{role.id}" %>>Apply Now</button>
+          <button class="apply-now btn" data-toggle="modal" data-target=<%= "mailto:info@hanningrecruitment.com" %>>Apply Now</button>
         </div>
         <div class="modal fade" id=<%= "role#{role.id}" %> tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog register-form" role="document">
