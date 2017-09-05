@@ -12,7 +12,7 @@
 }
 
 @keyframes fadeOut {
-  0% {
+  100% {
     transform: scale(1);
     opacity: 1;
   }
@@ -23,7 +23,7 @@
 }
 
 @-webkit-keyframes fadeOut {
-  0% {
+  100% {
     -webkit-transform: scale(1);
     opacity: 1;
   }

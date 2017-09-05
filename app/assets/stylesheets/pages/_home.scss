@@ -1,14 +1,17 @@
-.faded-logo img {
-	height: 90vh;
+.faded-logo {
+	z-index: 1;
+    position: relative;
+	img {
+	    height: 80vh;
+	    margin-top: 60px;
+	}
 }
 .menu-circles {
-	position: absolute;
-	bottom: 35px;
-	z-index: 3000 !important;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	left: 25%;
+    z-index: 3000 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 75px;
 }
 .menu-circle {
 	margin: 0 20px;
