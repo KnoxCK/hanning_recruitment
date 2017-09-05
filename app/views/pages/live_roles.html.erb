@@ -32,7 +32,7 @@
 
 
         <% @live_roles.each do |role| %>
-          <div class="job-role live-job" data-target=<%= "##{role.id}" %> id=<%= role.category.id == 1 ? "commercial" : "residential" %>>
+          <div class="<%= role.category.id == 1 ? "commercial job-role live-job" : "residential job-role live-job" %>" data-target=<%= "##{role.id}" %> id=>
             <div class="job-title">
             <p><%= role.title %></p>
             </div>

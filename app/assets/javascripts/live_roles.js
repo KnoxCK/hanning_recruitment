@@ -9,12 +9,12 @@ $(document).ready(function() {
 
   $(".btn-commercial").click(function(e) {
     e.preventDefault();
-    $("#residential").addClass("hidden");
-    $("#commercial").removeClass("hidden");
+    $(".residential").addClass("hidden");
+    $(".commercial").removeClass("hidden");
   })
   $(".btn-residential").click(function(e) {
     e.preventDefault();
-    $("#commercial").addClass("hidden");
-    $("#residential").removeClass("hidden");
+    $(".commercial").addClass("hidden");
+    $(".residential").removeClass("hidden");
   })
 })

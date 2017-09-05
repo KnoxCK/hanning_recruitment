@@ -5,10 +5,24 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Category.destroy_all
+# LiveRole.destroy_all
+# JobApplication.destroy_all
+# LiveRole.destroy_all
+# Category.destroy_all
 User.destroy_all
 
 Category.create(name: "Commercial")
 Category.create(name: "Residential")
 
 User.create(email: "admin@hanning.com", password: "Hanning1!", admin: true)
+
+# LiveRole.create(title: "Land Buyer", sector: "Commercial", salary: "£35K - £45K", package: "Competitive commission structure", company: "A boutique Investment and Development company", location: "London", role:"A boutique Investment and Development company that has a strong track record of dealing with both commercial and residential led developments is looking for a Land Buyer with a proven track record to join their well regarded team.", category_id: 1)
+# LiveRole.create(title: "Land Buyer", sector: "Commercial", salary: "£35K - £45K", package: "Competitive commission structure", company: "A boutique Investment and Development company", location: "London", role:"A boutique Investment and Development company that has a strong track record of dealing with both commercial and residential led developments is looking for a Land Buyer with a proven track record to join their well regarded team.", category_id: 1)
+# LiveRole.create(title: "Land Buyer", sector: "Commercial", salary: "£35K - £45K", package: "Competitive commission structure", company: "A boutique Investment and Development company", location: "London", role:"A boutique Investment and Development company that has a strong track record of dealing with both commercial and residential led developments is looking for a Land Buyer with a proven track record to join their well regarded team.", category_id: 1)
+# LiveRole.create(title: "Land Buyer", sector: "Commercial", salary: "£35K - £45K", package: "Competitive commission structure", company: "A boutique Investment and Development company", location: "London", role:"A boutique Investment and Development company that has a strong track record of dealing with both commercial and residential led developments is looking for a Land Buyer with a proven track record to join their well regarded team.", category_id: 1)
+# LiveRole.create(title: "Land Buyer", sector: "Commercial", salary: "£35K - £45K", package: "Competitive commission structure", company: "A boutique Investment and Development company", location: "London", role:"A boutique Investment and Development company that has a strong track record of dealing with both commercial and residential led developments is looking for a Land Buyer with a proven track record to join their well regarded team.", category_id: 1)
+# LiveRole.create(title: "Land Buyer", sector: "Residential", salary: "£35K - £45K", package: "Competitive commission structure", company: "A boutique Investment and Development company", location: "London", role:"A boutique Investment and Development company that has a strong track record of dealing with both commercial and residential led developments is looking for a Land Buyer with a proven track record to join their well regarded team.", category_id: 2)
+# LiveRole.create(title: "Land Buyer", sector: "Residential", salary: "£35K - £45K", package: "Competitive commission structure", company: "A boutique Investment and Development company", location: "London", role:"A boutique Investment and Development company that has a strong track record of dealing with both commercial and residential led developments is looking for a Land Buyer with a proven track record to join their well regarded team.", category_id: 2)
+# LiveRole.create(title: "Land Buyer", sector: "Residential", salary: "£35K - £45K", package: "Competitive commission structure", company: "A boutique Investment and Development company", location: "London", role:"A boutique Investment and Development company that has a strong track record of dealing with both commercial and residential led developments is looking for a Land Buyer with a proven track record to join their well regarded team.", category_id: 2)
+# LiveRole.create(title: "Land Buyer", sector: "Residential", salary: "£35K - £45K", package: "Competitive commission structure", company: "A boutique Investment and Development company", location: "London", role:"A boutique Investment and Development company that has a strong track record of dealing with both commercial and residential led developments is looking for a Land Buyer with a proven track record to join their well regarded team.", category_id: 2)
+# LiveRole.create(title: "Land Buyer", sector: "Residential", salary: "£35K - £45K", package: "Competitive commission structure", company: "A boutique Investment and Development company", location: "London", role:"A boutique Investment and Development company that has a strong track record of dealing with both commercial and residential led developments is looking for a Land Buyer with a proven track record to join their well regarded team.", category_id: 2)
