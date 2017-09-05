@@ -30,6 +30,9 @@
 	border-bottom: 4px solid #f4f4f4;
 	padding-top: 10px;
 	margin-top: 10px;
+  &.active {
+    display: block;
+  }
 	h6 {
 		color: #d6d6d6;
 		font-size: 16px;
@@ -38,7 +41,7 @@
 	p {
 		font-size: 15px;
 	}
-  &#commercial {
+  &.commercial {
     &:hover {
       background-color: #1b3447;
       cursor: pointer;
@@ -47,7 +50,7 @@
       }
     }
   }
-  &#residential:hover {
+  &.residential:hover {
     background-color: #ffec3b;
     cursor: pointer;
   }
@@ -131,7 +134,7 @@
     	padding-left: 0px;
     }
 }
-	
+
 
 
 
