@@ -1,4 +1,6 @@
 class JobApplicationsController < ApplicationController
+  skip_before_action :authenticate_user!
+
   def create
     # binding.pry
     @job_application = JobApplication.new(job_application_params)
