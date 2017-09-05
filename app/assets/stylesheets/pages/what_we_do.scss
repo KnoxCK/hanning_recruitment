@@ -26,20 +26,31 @@
 	}
 }
 .what-we-do-left-col {
-	width: 400px;
-	margin-left: 50px;
+	width: 450px;
+	margin-left: 25px;
 	strong {
 		font-size: 17px;
 	}
+	ul {
+		padding-left: 14px;
+	}
+	li {
+		color: #243548;
+		font-size: 14px;
+		padding-top: 10px;
+	}
 }
 .what-we-do-right-col {
-	width: 600px;
-	padding: 0 40px;
+	width: 450px;
+	margin: 95px 0 0 20px;
 	margin-top: 95px;
 	li {
 		color: #243548;
 		font-size: 14px;
 		padding-top: 10px;
+	}
+	ul {
+		padding-left: 14px;
 	}
 }
 .sector-section {

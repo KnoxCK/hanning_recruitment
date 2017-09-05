@@ -1,7 +1,23 @@
 <div class="footer">
-	<p><%= link_to "Home", root_path %></p>
-	<p><%= link_to "What We Do", what_we_do_path %></p>
-	<p><%= link_to "About Us", about_us_path %></p>
-	<p><%= link_to "Live Roles", live_roles_path %></p>
-	<p><%= link_to "Contact Us", contact_path %></p>
+	<div class="footer-links">
+		<p><%= link_to "Home", root_path %></p>
+		<p><%= link_to "What We Do", what_we_do_path %></p>
+		<p><%= link_to "About Us", about_us_path %></p>
+		<p><%= link_to "Live Roles", live_roles_path %></p>
+		<p><%= link_to "Contact Us", contact_path %></p>
+	</div>
+	<div class="footer-sm">
+		<%= link_to "https://www.instagram.com/hanningrecruitment/?hl=en" do %>
+		<i class="fa fa-instagram"></i>
+		<% end %>
+		<%= link_to "https://www.twitter.com" do %>
+		<i class="fa fa-twitter"></i>
+		<% end %>
+		<%= link_to "https://www.linkedin.com/in/toby-speke-mrics/" do %>
+		<i class="fa fa-linkedin"></i>
+		<% end %>
+	</div>
+	<div class="footer-copyright">
+		<p>Copyright (c) 2017 Hanning Recruitment</p>
+	</div>
 </div>
