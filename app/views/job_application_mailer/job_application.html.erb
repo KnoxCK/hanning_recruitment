@@ -1,5 +1,8 @@
-You have recieved a job application from <%= @job_application.name %>:
-
-<%= @job_application.email %>
-<%= @job_application.live_role.title if @job_application.live_role %>
-<%= cl_image_tag @job_application.cv %>
+You have recieved a job application:
+<br>
+<p>Name: <%= @job_application.name %></p>
+<p>Email: <%= @job_application.email %></p>
+<% if @job_application.live_role %>
+<p>Role: ID:<%= @job_application.live_role.id %> - <%= @job_application.live_role.title %></p>
+<br>
+<%= link_to "Download CV", cl_image_path(@job_application.cv) %>
