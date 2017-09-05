@@ -1,4 +1,6 @@
-You have recieved a job application:
+
+
+You have recieved a <%= @job_application.live_role ? "job application" : "registration" %>:
 <br>
 <p>Name: <%= @job_application.name %></p>
 <p>Email: <%= @job_application.email %></p>
