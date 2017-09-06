@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  before_action :authenticate_user!, :job_application
+  before_action :authenticate_user!, :set_registration
 
-  def job_application
-    @job_application = JobApplication.new
+  def set_registration
+    @registration = Registration.new
   end
 end
