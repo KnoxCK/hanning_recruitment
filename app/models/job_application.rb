@@ -1,5 +1,5 @@
 class JobApplication < ApplicationRecord
-  belongs_to :live_role, optional: true
+  belongs_to :live_role
   validates_presence_of :cv
   mount_uploader :cv, CvUploader
 end
