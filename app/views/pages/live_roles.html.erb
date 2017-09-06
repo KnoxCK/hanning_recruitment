@@ -88,7 +88,7 @@
           <div class="modal-dialog register-form" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Apply Now</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Apply for <%= role.title %></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -106,7 +106,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-commercial" data-dismiss="modal">Close</button>
-                <%= a.submit "Submit", class: "btn btn-register-form" %>
+                <%= a.submit "Submit", class: "btn btn-apply-form" %>
                 <% end %>
               </div>
             </div>

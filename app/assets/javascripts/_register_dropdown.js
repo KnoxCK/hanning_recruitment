@@ -23,4 +23,8 @@ $(document).ready(function() {
       return text === "Register" ? "Close" : "Register";
     });
   })
+  $(".btn-upload-blue").click(function() {
+    $(this).addClass("hidden");
+    $(".btn-register-form").removeClass("hidden");
+  })
 })

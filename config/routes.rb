@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'job_applications/create'
-
-  get 'enquiries/create'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
@@ -14,5 +11,6 @@ Rails.application.routes.draw do
 
   resources :enquiries, only: [:create]
   resources :job_applications, only: [:create]
+  resources :registrations, only: [:create]
 
 end

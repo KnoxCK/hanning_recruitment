@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="register-form">
-       <%= simple_form_for @job_application do |a| %>
+       <%= simple_form_for @registration do |a| %>
           <%= a.input :name, label: false, placeholder: "Name" %>
           <%= a.input :email, label: false, placeholder: "Email" %>
           <%= a.input :phone, label: false, placeholder: "Phone" %>
@@ -26,7 +26,7 @@
             Upload CV
             <%= a.input :cv, label: false, class: "upload-cv" %>
           </label>
-          <%= a.submit "Register", class: "btn btn-register-form" %>
+          <%= a.submit "Register", class: "btn btn-register-form hidden" %>
         <% end %>
     </div>
   </div>
