@@ -1,0 +1,8 @@
+
+
+You have a new CV upload from:
+<br>
+<p>Name: <%= @registration.name %></p>
+<p>Email: <%= @registration.email %></p>
+<br>
+<%= link_to "Download CV", cl_image_path(@registration.cv) %>

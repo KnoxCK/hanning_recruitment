@@ -3,7 +3,7 @@ class RegistrationsController < ApplicationController
     @registration = Registration.new(registration_params)
     if @registration.save
       flash[:notice] = "Thank you for registering with us. We will be in touch"
-      # JobApplicationMailer.registration(@registration).deliver_now
+      RegistrationsMailer.registration(@registration).deliver_now
       redirect_to root_path
     else
       flash[:alert] = "You must upload a CV"
