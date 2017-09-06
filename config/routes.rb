@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'registrations/create'
+
   get 'job_applications/create'
 
   get 'enquiries/create'
