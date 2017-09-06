@@ -99,8 +99,9 @@
                 <%= a.input :email, label: false, placeholder: "Email" %>
                 <%= a.input :phone, label: false, placeholder: "Phone" %>
                 <%= hidden_field_tag :role_id, role.id %>
-                <%= a.input :cv, label: "CV" %>
-
+                <label class="upload-cv">
+                  <%= a.input :cv, label: "CV", class: "hidden" %>
+                </label>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-commercial" data-dismiss="modal">Close</button>
