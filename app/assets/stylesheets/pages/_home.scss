@@ -12,6 +12,10 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 75px;
+    text-decoration: none;
+    a:hover {
+		text-decoration: none;
+	}
 }
 .menu-circle {
 	margin: 0 20px;
@@ -32,6 +36,12 @@
 		padding-top: 10px;
 		// font-weight: lighter;
     }
+    h6 { 
+    	color: white;
+    }
+    h6:hover {
+		text-decoration: none;
+	}
 }
 .menu-circle:hover {
 	color: white;
