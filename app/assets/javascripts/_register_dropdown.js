@@ -23,8 +23,17 @@ $(document).ready(function() {
       return text === "Register" ? "Close" : "Register";
     });
   })
-  $(".btn-upload-blue").click(function() {
-    $(this).addClass("hidden");
+  // $(".btn-upload-blue").click(function() {
+  //   $(this).addClass("hidden");
+  //   $(".btn-register-form").removeClass("hidden");
+  // })
+
+  $("input:file").change(function (){
+    console.log(this)
+    $(".upload-cv").addClass("btn-upload-blue")
+    $(".upload-cv").removeClass(".upload-cv")
     $(".btn-register-form").removeClass("hidden");
-  })
+       var fileName = $(this).val().substr(12);
+       $(".filename").html(fileName);
+     });
 })

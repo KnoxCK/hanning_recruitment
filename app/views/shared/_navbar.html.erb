@@ -23,12 +23,15 @@
           <%= a.input :name, label: false, placeholder: "Name" %>
           <%= a.input :email, label: false, placeholder: "Email" %>
           <%= a.input :phone, label: false, placeholder: "Phone" %>
-          <label class="btn btn-upload-blue">
-            Upload CV
-            <%= a.input :cv, label: false, class: "upload-cv" %>
-          </label>
-          <%= a.submit "Register", class: "btn btn-register-form hidden" %>
-        <% end %>
+          <div class="form-buttons">
+            <label class="btn btn-upload-blue">
+              Upload CV
+              <%= a.input :cv, label: false, class: "upload-cv" %>
+            </label>
+            <%= a.submit "Register", class: "btn btn-register-form hidden" %>
+          <% end %>
+        </div>
+        <div class="filename"></div>
       </div>
     </div>
   </div>
