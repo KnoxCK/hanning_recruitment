@@ -98,6 +98,20 @@
 .toggle-blue {
   color: #243548;
 }
+.landing-navbar-sm {
+  display: flex;
+  margin-right: 150px;
+  a {
+    color: #243548;
+    font-weight: lighter;
+    font-size: 12px;
+    padding: 0 7px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #FBE954;
+  }
+}
 @media only screen and (max-width: 400px) {
   .landing-hanning-logo {
     display: none;

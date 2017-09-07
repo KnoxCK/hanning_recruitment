@@ -18,12 +18,12 @@
 }
 /* Logo */
 .navbar-hanning-submark {
-  height: 87px;
-  position: absolute;
-  left: 50px;
-  top: -9px;
-  border: #F4F4F4 solid 9px;
-  border-radius: 50%;
+    height: 64px;
+    position: absolute;
+    left: 50px;
+    top: 3px;
+  // border: #F4F4F4 solid 9px;
+  // border-radius: 50%;
 }
 .navbar-hanning-fixed {
   position: fixed;
@@ -119,6 +119,9 @@
 }
 .navbar-sm {
   display: flex;
+  position: absolute;
+  top: 26px;
+  right: 180px;
   a {
     color: #d6d6d6;
     font-weight: lighter;
@@ -130,19 +133,13 @@
     color: #FBE954;
   }
 }
-@media only screen and (max-width: 1389px) {
-  .navbar-hanning-submark {
-    border: white solid 8px;
-  }
-}
 @media only screen and (max-width: 991px) {
   .navbar-hanning {
     justify-content: space-between;
   }
   .navbar-hanning-submark {
-    border: #FBE954 solid 2px;
     position: absolute;
-    left: 20px;
+    left: 30px;
     top: 4px;
     height: 60px;
   }
