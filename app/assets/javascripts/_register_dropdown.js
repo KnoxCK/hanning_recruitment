@@ -33,7 +33,7 @@ $(document).ready(function() {
     $(".upload-cv").addClass("btn-upload-blue")
     $(".upload-cv").removeClass(".upload-cv")
     $(".btn-register-form").removeClass("hidden");
-       var fileName = $(this).val();
+       var fileName = $(this).val().substr(12);
        $(".filename").html(fileName);
      });
 })
