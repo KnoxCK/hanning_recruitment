@@ -3,31 +3,39 @@
 	<div class="banner-content">
 	<%= image_tag "Hanning_Submark_RGB_Yellow.png", class: "submark-logo" %>
     <%= image_tag "Hanning_FullLogo_RGB_White.png", class: "main-logo" %>
-    	<h4>Connected <span>–</span> Professional <span>–</span> Trusted</h4>
-  	</div>
-    <div class="faded-logo fadeIn hidden hidden-xs hidden-sm">
-      <%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1504597182/Asset_9_1_aof9tg.png" %>
-    </div>
-  	<div class="menu-circles fadeIn hidden hidden-xs hidden-sm">
+    <h4>Connected <span>–</span> Professional <span>–</span> Trusted</h4>
+  </div>
+  <div class="faded-logo fadeIn hidden hidden-xs hidden-sm">
+    <%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1504597182/Asset_9_1_aof9tg.png" %>
+  </div>
+	<div class="menu-circles fadeIn hidden hidden-xs hidden-sm">
+    <%= link_to what_we_do_path do %>
       <div class="menu-circle">
-      <h6><%= link_to "What We Do", what_we_do_path %></h6>
+        <h6>What We Do</h6>
       </div>
+    <% end %>
+    <%= link_to about_us_path do %>
       <div class="menu-circle">
-      <h6><%= link_to "About Us", about_us_path %></h6>
+        <h6>About Us</h6>
       </div>
+    <% end %>
+    <%= link_to live_roles_path do %>
       <div class="menu-circle">
-      <h6><%= link_to "Live Roles", live_roles_path %></h6>
+        <h6>Live Roles</h6>
       </div>
-      <!-- <div class="menu-circle">
-      <h6><%= link_to "News", news_path %></h6>
-      </div> -->
+    <% end %>
+    <!-- <div class="menu-circle">
+    <h6><%= link_to "News", news_path %></h6>
+    </div> -->
+    <%= link_to contact_path do %>
       <div class="menu-circle">
-      <h6><%= link_to "Contact", contact_path %></h6>
+        <h6>Contact</h6>
       </div>
-  	</div>
-  	<div class="home-strip fadeIn hidden hidden-sm hidden-xs text-center">
-  		<h4 class="hidden">Connected <span>–</span> Professional <span>–</span> Trusted</h4>
-  	</div>
+    <% end %>
+	</div>
+	<div class="home-strip fadeIn hidden hidden-sm hidden-xs text-center">
+		<h4 class="hidden">Connected <span>–</span> Professional <span>–</span> Trusted</h4>
+	</div>
 </div>
 
 

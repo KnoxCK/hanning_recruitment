@@ -24,7 +24,7 @@
 }
 .form-buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
 }
 .form-group.file {
   display: none;
@@ -89,6 +89,9 @@
 	background-color: #1b3447;
 	border-color: #1b3447;
   &:hover {
+    color: #d6d6d6;
+  }
+  &:focus {
     color: #d6d6d6;
   }
 }

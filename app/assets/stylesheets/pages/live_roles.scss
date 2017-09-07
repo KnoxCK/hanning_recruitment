@@ -43,6 +43,11 @@
 	}
   &.commercial {
     &:hover {
+      -webkit-transition: all 500ms ease;
+      -moz-transition: all 500ms ease;
+      -ms-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      transition: all 500ms ease;
       background-color: #1b3447;
       cursor: pointer;
       p {
@@ -51,6 +56,11 @@
     }
   }
   &.residential:hover {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
     background-color: #ffec3b;
     cursor: pointer;
   }
@@ -95,9 +105,9 @@
 	p, li {
 		color: white;
 	}
-  &.active {
-    display: block;
-  }
+	&.active {
+		display: block;
+	}
 }
 @media only screen and (max-width: 1000px) {
     .live-roles {
