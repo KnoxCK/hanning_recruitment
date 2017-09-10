@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head><%= favicon_link_tag 'Hanning_Favicon.ico' %>
+  <head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106151705-1"></script>
+    <script>
+      document.addEventListener('turbolinks:load', function(event) {
+        var url = event.data.url;
+        dataLayer.push({
+          'event':'pageView',
+          'virtualUrl': url
+        });
+      });
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106151705-1');
+    </script>
+
+    <%= favicon_link_tag 'Hanning_Favicon.ico' %>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hanning | Real Estate Recruitment</title>
