@@ -1,7 +1,40 @@
 <%= render 'shared/navbar' %>
 <div class="wrapper">
 	<div class="page-content">
-	
+		<div class="news">
+			<div class="news-title">
+					<h2>News</h2>
+					<hr>
+			</div>
+			<div class="news-stories-all">
+				<%= link_to news_article_path do %>
+					<div class="news-story-snippet">
+						<%= image_tag "http://res.cloudinary.com/dwkjj7bpb/image/upload/v1505153575/RecruitmentRevolution_nfoinu.png" %>
+						<div class="read-more">
+							<p>READ MORE</p>
+						</div>
+						<div class="img-box"></div>
+						<div class="news-story-title">
+							<h4>Will You Join our Recruitment Revolution?</h4>
+							<h6>11th September 2017<hr></h6>
+						</div>
+					</div>
+				<% end %>
+				<%= link_to news_article_two_path do %>
+					<div class="news-story-snippet">
+						<%= image_tag "http://res.cloudinary.com/dwkjj7bpb/image/upload/v1505151997/PrimeResi_drnt1s.png" %>
+						<div class="read-more">
+							<p>READ MORE</p>
+						</div>
+						<div class="img-box"></div>
+						<div class="news-story-title">
+							<h4>VanHan founders back real estate recruitment start-up</h4>
+							<h6>9th September 2017<hr></h6>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		</div>
 	</div>
 </div>
 <%= render 'shared/footer' %>
