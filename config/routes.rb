@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'about_us', to: 'pages#about_us'
   get 'live_roles', to: 'pages#live_roles'
   get 'news', to: 'pages#news'
+  get 'news_article', to: 'pages#news_article'
+  get 'news_article_two', to: 'pages#news_article_two'
   get 'contact', to: 'pages#contact'
 
   resources :enquiries, only: [:create]
