@@ -19,6 +19,7 @@ class PagesController < ApplicationController
 
   def news
     @news = News.all.order(:created_at).reverse
+
   end
 
   def news_article
