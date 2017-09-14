@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home, :what_we_do, :about_us, :live_roles, :news, :news_article, :news_article_two, :contact]
-
+  before_action :instagram_call, only: :news
   def home
   end
 
@@ -29,4 +29,16 @@ class PagesController < ApplicationController
     @enquiry = Enquiry.new
     @message = params[:message]
   end
+
+  private
+
+  def instagram_call
+    url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=5855364746.49cacea.fa77e9e21f3b4d88b0e7347358e797e0"
+    media = JSON.parse(open(url).read)["data"]
+    @image_urls = []
+    media.first(10).each do |media|
+      @image_urls << media["link"]
+    end
+  end
+
 end
