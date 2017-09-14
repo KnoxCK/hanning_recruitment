@@ -25,9 +25,6 @@ class PagesController < ApplicationController
     @news = News.find(params[:news].to_i)
   end
 
-  def news_article_two
-  end
-
   def contact
     @enquiry = Enquiry.new
     @message = params[:message]
