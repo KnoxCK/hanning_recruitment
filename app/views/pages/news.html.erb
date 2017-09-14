@@ -8,7 +8,20 @@
 			</div>
 			<div class="news-stories-all">
 
-        <% @news %>
+        <% @news.each do |news| %>
+
+          <div class="news-story-snippet">
+            <%= cl_image_tag news.photo %>
+            <div class="read-more">
+              <p>READ MORE</p>
+            </div>
+            <div class="img-box"></div>
+            <div class="news-story-title">
+              <h4><%= news.title %></h4>
+              <h6><%= news.date %><hr></h6>
+            </div>
+          </div>
+        <% end %>
 
 
 
@@ -17,11 +30,10 @@
 
 
 
-
-
-				<%= link_to news_article_path do %>
+<!--
+				<%# link_to news_article_path do %>
 					<div class="news-story-snippet">
-						<%= image_tag "http://res.cloudinary.com/dwkjj7bpb/image/upload/v1505153575/RecruitmentRevolution_nfoinu.png" %>
+						<%# image_tag "http://res.cloudinary.com/dwkjj7bpb/image/upload/v1505153575/RecruitmentRevolution_nfoinu.png" %>
 						<div class="read-more">
 							<p>READ MORE</p>
 						</div>
@@ -31,10 +43,10 @@
 							<h6>11th September 2017<hr></h6>
 						</div>
 					</div>
-				<% end %>
-				<%= link_to news_article_two_path do %>
+				<%# end %>
+				<%# link_to news_article_two_path do %>
 					<div class="news-story-snippet">
-						<%= image_tag "http://res.cloudinary.com/dwkjj7bpb/image/upload/v1505155704/PrimeResi_fuhpro.png" %>
+						<%# image_tag "http://res.cloudinary.com/dwkjj7bpb/image/upload/v1505155704/PrimeResi_fuhpro.png" %>
 						<div class="read-more">
 							<p>READ MORE</p>
 						</div>
@@ -44,7 +56,7 @@
 							<h6>9th September 2017<hr></h6>
 						</div>
 					</div>
-				<% end %>
+				<%# end %> -->
 			</div>
 		</div>
 	</div>
