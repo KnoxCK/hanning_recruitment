@@ -18,12 +18,11 @@ class PagesController < ApplicationController
   end
 
   def news
+    @news = News.all.order(:created_at).reverse
   end
 
   def news_article
-  end
-
-  def news_article_two
+    @news = News.find(params[:news].to_i)
   end
 
   def contact

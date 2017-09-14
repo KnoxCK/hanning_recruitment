@@ -1,0 +1,13 @@
+<div class="news-title">
+  <h2><%= news.title %></h2>
+  <hr>
+</div>
+<div class="news-stories-all">
+  <div class="news-story-main">
+    <%= cl_image_tag news.photo %>
+    <div class="news-story-main-body">
+      <h6><%= news.formatted_date %></h6>
+      <p><%= news.body.html_safe %></p>
+    </div>
+  </div>
+</div>
