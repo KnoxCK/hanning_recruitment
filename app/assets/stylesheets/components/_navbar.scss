@@ -69,6 +69,8 @@
 .navbar-hanning-item {
   cursor: pointer;
   padding: 0 20px;
+  display: flex;
+  align-items: center;
 }
 
 /* Navbar link */
@@ -122,6 +124,20 @@
   position: absolute;
   top: 29px;
   right: 180px;
+  a {
+    color: #d6d6d6;
+    font-weight: lighter;
+    font-size: 12px;
+    padding: 0 7px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #FBE954;
+  }
+}
+.navbar-sm-mob {
+  display: flex;
+  margin-right: 20px;
   a {
     color: #d6d6d6;
     font-weight: lighter;

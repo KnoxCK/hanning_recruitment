@@ -50,6 +50,8 @@
 .landing-hanning-item {
   cursor: pointer;
   padding: 0 20px;
+  display: flex;
+  align-items: center;
 }
 
 /* landing link */
@@ -112,7 +114,21 @@
     color: #FBE954;
   }
 }
-@media only screen and (max-width: 400px) {
+.landing-navbar-sm-mob {
+  display: flex;
+  margin-right: 20px;
+  a {
+    color: #243548;
+    font-weight: lighter;
+    font-size: 12px;
+    padding: 0 7px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #FBE954;
+  }
+}
+@media only screen and (max-width: 480px) {
   .landing-hanning-logo {
     display: none;
   }
