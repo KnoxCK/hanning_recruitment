@@ -4,10 +4,9 @@
 		<div class="news">
 			<div class="news-title">
 					<h2>News</h2>
-          <img src=<%= "#{@insta}media/?size=m" %>>
-					<hr>
-			</div>
-			<div class="news-stories-all">
+          <hr>
+      </div>
+      <div class="news-stories-all">
 
         <% @news.each do |news| %>
           <%= link_to news_article_path({news: news}) do %>
@@ -24,42 +23,45 @@
             </div>
           <% end %>
         <% end %>
+			</div>
 
 
 
+          <% @image_urls.each do |url| %>
+          <img src=<%= "#{url}media/?size=m"%> style="width:200px;">
+          <% end %>
 
 
 
 
 
 <!--
-				<%# link_to news_article_path do %>
-					<div class="news-story-snippet">
-						<%# image_tag "http://res.cloudinary.com/dwkjj7bpb/image/upload/v1505153575/RecruitmentRevolution_nfoinu.png" %>
-						<div class="read-more">
-							<p>READ MORE</p>
-						</div>
-						<div class="img-box"></div>
-						<div class="news-story-title">
-							<h4>Will You Join our Recruitment Revolution?</h4>
-							<h6>11th September 2017<hr></h6>
-						</div>
-					</div>
-				<%# end %>
-				<%# link_to news_article_two_path do %>
-					<div class="news-story-snippet">
-						<%# image_tag "http://res.cloudinary.com/dwkjj7bpb/image/upload/v1505155704/PrimeResi_fuhpro.png" %>
-						<div class="read-more">
-							<p>READ MORE</p>
-						</div>
-						<div class="img-box"></div>
-						<div class="news-story-title">
-							<h4>VanHan founders back real estate recruitment start-up</h4>
-							<h6>9th September 2017<hr></h6>
-						</div>
-					</div>
-				<%# end %> -->
-			</div>
+        <%# link_to news_article_path do %>
+          <div class="news-story-snippet">
+            <%# image_tag "http://res.cloudinary.com/dwkjj7bpb/image/upload/v1505153575/RecruitmentRevolution_nfoinu.png" %>
+            <div class="read-more">
+              <p>READ MORE</p>
+            </div>
+            <div class="img-box"></div>
+            <div class="news-story-title">
+              <h4>Will You Join our Recruitment Revolution?</h4>
+              <h6>11th September 2017<hr></h6>
+            </div>
+          </div>
+        <%# end %>
+        <%# link_to news_article_two_path do %>
+          <div class="news-story-snippet">
+            <%# image_tag "http://res.cloudinary.com/dwkjj7bpb/image/upload/v1505155704/PrimeResi_fuhpro.png" %>
+            <div class="read-more">
+              <p>READ MORE</p>
+            </div>
+            <div class="img-box"></div>
+            <div class="news-story-title">
+              <h4>VanHan founders back real estate recruitment start-up</h4>
+              <h6>9th September 2017<hr></h6>
+            </div>
+          </div>
+        <%# end %> -->
 		</div>
 	</div>
 </div>
