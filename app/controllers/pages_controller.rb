@@ -22,6 +22,7 @@ class PagesController < ApplicationController
   end
 
   def news_article
+    @news = News.find(params[:news].to_i)
   end
 
   def news_article_two

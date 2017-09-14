@@ -9,7 +9,7 @@
 			<div class="news-stories-all">
 
         <% @news.each do |news| %>
-          <%= link_to news_article_path do %>
+          <%= link_to news_article_path({news: news}) do %>
             <div class="news-story-snippet">
               <%= cl_image_tag news.photo %>
               <div class="read-more">
