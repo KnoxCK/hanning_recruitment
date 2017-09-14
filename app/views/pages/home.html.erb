@@ -24,9 +24,11 @@
         <h6>Live Roles</h6>
       </div>
     <% end %>
-    <div class="menu-circle">
-    <h6><%= link_to "News", news_path %></h6>
-    </div>
+    <%= link_to news_path do %>
+      <div class="menu-circle">
+        <h6>News</h6>
+      </div>
+    <% end %>
     <%= link_to contact_path do %>
       <div class="menu-circle">
         <h6>Contact</h6>
@@ -120,18 +122,18 @@
         <hr>
         <p>
         <ul>
-        <li>Investment Manager </li> 
-        <li>Investment Agent</li> 
-        <li>Fund Manager </li> 
-        <li>Investment analyst </li> 
-        <li>Deal Origination</li> 
-        <li>Portfolio Manager</li> 
-        <li>Investment Surveyor</li> 
-        <li>Land Buyer</li> 
-        <li>Acquisition Surveyor</li>  
-        <li>Land Agent </li> 
-        <li>Acquisition Analyst</li>  
-        <li>Private Equity specialists</li>  
+        <li>Investment Manager </li>
+        <li>Investment Agent</li>
+        <li>Fund Manager </li>
+        <li>Investment analyst </li>
+        <li>Deal Origination</li>
+        <li>Portfolio Manager</li>
+        <li>Investment Surveyor</li>
+        <li>Land Buyer</li>
+        <li>Acquisition Surveyor</li>
+        <li>Land Agent </li>
+        <li>Acquisition Analyst</li>
+        <li>Private Equity specialists</li>
         </ul>
         </p>
         <p><%= link_to "Contact us", contact_path %> for a confidential call back</p>
@@ -148,7 +150,7 @@
           <li>Property Manager</li>
           <li>Investment Manager</li>
           <li>Analyst</li>
-          <li>Operations Manager</li> 
+          <li>Operations Manager</li>
         </ul>
         </p>
         <p><%= link_to "Contact us", contact_path %> for a confidential call back</p>
@@ -178,7 +180,7 @@
           <li>Land Managers</li>
           <li>Development Managers</li>
           <li>Development Analysts</li>
-          <li>Planning and Design Manager</li> 
+          <li>Planning and Design Manager</li>
           <li>Development Surveyor</li>
           <li>Strategic Land Buyer</li>
           <li>Strategic Land Manger</li>
@@ -196,11 +198,11 @@
           <li>Property Management</li>
           <li>Investment Agency</li>
           <li>Property Analyst</li>
-          <li>Development Surveyor</li> 
+          <li>Development Surveyor</li>
           <li>Valuation Surveyor</li>
-          <li>Landlord & Tenant Surveyor</li> 
+          <li>Landlord & Tenant Surveyor</li>
           <li>Business Development</li>
-          <li>Commercial & Residential Capital Markets Analyst</li> 
+          <li>Commercial & Residential Capital Markets Analyst</li>
           <li>Estate Manager</li>
         </ul>
         </p>
@@ -223,7 +225,7 @@
         <p>
         <ul>
           <li>Development Manger</li>
-          <li>Planning & Design Management</li> 
+          <li>Planning & Design Management</li>
           <li>Project Managers</li>
           <li>Building Surveyors</li>
           <li>Quantity Surveyors</li>
@@ -238,7 +240,7 @@
         <ul>
           <li>Estate Agent</li>
           <li>Letting Agent</li>
-          <li>Residential Capital Markets Specialist</li> 
+          <li>Residential Capital Markets Specialist</li>
           <li>Residential Property Manger</li>
           <li>Block Manager</li>
           <li>Marketing</li>
@@ -248,7 +250,7 @@
           <li>New Homes Sales Consultant</li>
           <li>Planner</li>
           <li>Estate Manager</li>
-          <li>Residential Land Surveyor</li> 
+          <li>Residential Land Surveyor</li>
           <li>Development Manager</li>
           <li>Investment Manager</li>
           <li>Analyst</li>
