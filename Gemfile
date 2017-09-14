@@ -26,8 +26,6 @@ gem 'rails_admin', '>= 1.0.0.rc'
 
 gem "letter_opener", group: :development
 
-gem 'instagram'
-
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
