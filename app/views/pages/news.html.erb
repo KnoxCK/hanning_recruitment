@@ -24,12 +24,23 @@
           <% end %>
         <% end %>
 			</div>
-
-
-
-          <% @image_urls.each do |url| %>
-          <img src=<%= "#{url}media/?size=m"%> style="width:200px;">
+      <div class="instagram-wrapper">
+        <% @image_urls.each do |url| %>
+          <%= link_to "https://www.instagram.com/hanningrecruitment/", target: '_blank' do %>
+            <div class="insta-img">
+              <img src=<%= "#{url}media/?size=m"%>>
+              <div class="insta">
+                <p>@HanningRecruitment</p>
+              </div>
+              <div class="insta-box"></div>
+            </div>
           <% end %>
+        <% end %>
+      </div>
+		</div>
+	</div>
+</div>
+<%= render 'shared/footer' %>
 
 
 
@@ -62,7 +73,3 @@
             </div>
           </div>
         <%# end %> -->
-		</div>
-	</div>
-</div>
-<%= render 'shared/footer' %>
