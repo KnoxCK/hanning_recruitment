@@ -9,18 +9,19 @@
 			<div class="news-stories-all">
 
         <% @news.each do |news| %>
-
-          <div class="news-story-snippet">
-            <%= cl_image_tag news.photo %>
-            <div class="read-more">
-              <p>READ MORE</p>
+          <%= link_to news_article_path do %>
+            <div class="news-story-snippet">
+              <%= cl_image_tag news.photo %>
+              <div class="read-more">
+                <p>READ MORE</p>
+              </div>
+              <div class="img-box"></div>
+              <div class="news-story-title">
+                <h4><%= news.title %></h4>
+                <h6><%= news.date %><hr></h6>
+              </div>
             </div>
-            <div class="img-box"></div>
-            <div class="news-story-title">
-              <h4><%= news.title %></h4>
-              <h6><%= news.date %><hr></h6>
-            </div>
-          </div>
+          <% end %>
         <% end %>
 
 
