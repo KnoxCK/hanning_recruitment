@@ -25,6 +25,7 @@
 }
 .news-stories-all {
 	display: flex;
+	flex-wrap: wrap;
 	a {
 		text-decoration: none;
 	}
