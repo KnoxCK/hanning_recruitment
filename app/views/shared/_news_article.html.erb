@@ -7,7 +7,7 @@
     <%= cl_image_tag news.photo %>
     <div class="news-story-main-body">
       <h6><%= news.formatted_date %></h6>
-      <p><%= news.body.html_safe %></p>
+      <p><%= simple_format news.body.html_safe %></p>
     </div>
   </div>
 </div>
