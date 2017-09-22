@@ -30,162 +30,128 @@
 					</div>
 				</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <div class="all-roles">
-        <div class="page active">
-        <% count = 0 %>
-        <% @live_roles.each do |role| %>
-          <% if count == 8 %>
+        <div class="all-roles">
+          <div class="page active">
+          <% count = 0 %>
+          <% @live_roles.each do |role| %>
+            <% if count == 8 %>
+              </div>
+              <div class="page">
+            <% end %>
+            <% if role.category.id == 1 %>
+              <% category = "commercial" %>
+            <% elsif role.category.id == 2 %>
+              <% category = "residential" %>
+            <% else %>
+              <% category = "c-and-r" %>
+            <% end %>
+            <div class="<%= "#{category} job-role live-job" %>" data-target=<%= "##{role.id}" %>>
+              <div class="job-title">
+              <p><%= role.title %></p>
+              </div>
+              <div class="job-sector">
+              <p><%= role.sector %></p>
+              </div>
+              <div class="job-salary">
+              <p><%= role.salary %></p>
+              </div>
+              <div class="job-package">
+              <p><%= role.package %></p>
+              </div>
+              <div class="job-description">
+              <p><%= role.company %></p>
+              </div>
             </div>
-            <div class="page">
+            <% count += 1 %>
           <% end %>
-          <% if role.category.id == 1 %>
-            <% category = "commercial" %>
-          <% elsif role.category.id == 2 %>
-            <% category = "residential" %>
-          <% else %>
-            <% category = "c-and-r" %>
-          <% end %>
-          <div class="<%= "#{category} job-role live-job" %>" data-target=<%= "##{role.id}" %>>
-            <div class="job-title">
-            <p><%= role.title %></p>
-            </div>
-            <div class="job-sector">
-            <p><%= role.sector %></p>
-            </div>
-            <div class="job-salary">
-            <p><%= role.salary %></p>
-            </div>
-            <div class="job-package">
-            <p><%= role.package %></p>
-            </div>
-            <div class="job-description">
-            <p><%= role.company %></p>
-            </div>
           </div>
-          <% count += 1 %>
-        <% end %>
-        </div>
-        <div class="scroll-btns">
-          <span class="prev">< Prev</span>
-          <span class="next">Next ></span>
-        </div>
-      </div>
-
-
-
-      <div class="commercial-roles hidden">
-        <div class="page">
-        <% count = 0 %>
-        <% @commercial_roles.each do |role| %>
-          <% if count == 8 %>
-            </div>
-            <div class="page">
-          <% end %>
-          <% if role.category.id == 1 %>
-            <% category = "commercial" %>
-          <% elsif role.category.id == 2 %>
-            <% category = "residential" %>
-          <% else %>
-            <% category = "c-and-r" %>
-          <% end %>
-          <div class="<%= "#{category} job-role live-job" %>" data-target=<%= "##{role.id}" %>>
-            <div class="job-title">
-            <p><%= role.title %></p>
-            </div>
-            <div class="job-sector">
-            <p><%= role.sector %></p>
-            </div>
-            <div class="job-salary">
-            <p><%= role.salary %></p>
-            </div>
-            <div class="job-package">
-            <p><%= role.package %></p>
-            </div>
-            <div class="job-description">
-            <p><%= role.company %></p>
-            </div>
+          <div class="scroll-btns">
+            <span class="prev">< Prev</span>
+            <span class="next">Next ></span>
           </div>
-          <% count += 1 %>
-        <% end %>
         </div>
-        <div class="scroll-btns">
-          <span class="prev">< Prev</span>
-          <span class="next">Next ></span>
-        </div>
-      </div>
 
-
-      <div class="residential-roles hidden">
-        <div class="page">
-        <% count = 0 %>
-        <% @residential_roles.each do |role| %>
-          <% if count == 8 %>
+        <div class="commercial-roles hidden">
+          <div class="page">
+          <% count = 0 %>
+          <% @commercial_roles.each do |role| %>
+            <% if count == 8 %>
+              </div>
+              <div class="page">
+            <% end %>
+            <% if role.category.id == 1 %>
+              <% category = "commercial" %>
+            <% elsif role.category.id == 2 %>
+              <% category = "residential" %>
+            <% else %>
+              <% category = "c-and-r" %>
+            <% end %>
+            <div class="<%= "#{category} job-role live-job" %>" data-target=<%= "##{role.id}" %>>
+              <div class="job-title">
+              <p><%= role.title %></p>
+              </div>
+              <div class="job-sector">
+              <p><%= role.sector %></p>
+              </div>
+              <div class="job-salary">
+              <p><%= role.salary %></p>
+              </div>
+              <div class="job-package">
+              <p><%= role.package %></p>
+              </div>
+              <div class="job-description">
+              <p><%= role.company %></p>
+              </div>
             </div>
-            <div class="page">
+            <% count += 1 %>
           <% end %>
-          <% if role.category.id == 1 %>
-            <% category = "commercial" %>
-          <% elsif role.category.id == 2 %>
-            <% category = "residential" %>
-          <% else %>
-            <% category = "c-and-r" %>
-          <% end %>
-          <div class="<%= "#{category} job-role live-job" %>" data-target=<%= "##{role.id}" %>>
-            <div class="job-title">
-            <p><%= role.title %></p>
-            </div>
-            <div class="job-sector">
-            <p><%= role.sector %></p>
-            </div>
-            <div class="job-salary">
-            <p><%= role.salary %></p>
-            </div>
-            <div class="job-package">
-            <p><%= role.package %></p>
-            </div>
-            <div class="job-description">
-            <p><%= role.company %></p>
-            </div>
           </div>
-          <% count += 1 %>
-          <% end %>
+          <div class="scroll-btns">
+            <span class="prev">< Prev</span>
+            <span class="next">Next ></span>
+          </div>
         </div>
-        <div class="scroll-btns">
-          <span class="prev">< Prev</span>
-          <span class="next">Next ></span>
+
+        <div class="residential-roles hidden">
+          <div class="page">
+          <% count = 0 %>
+          <% @residential_roles.each do |role| %>
+            <% if count == 8 %>
+              </div>
+              <div class="page">
+            <% end %>
+            <% if role.category.id == 1 %>
+              <% category = "commercial" %>
+            <% elsif role.category.id == 2 %>
+              <% category = "residential" %>
+            <% else %>
+              <% category = "c-and-r" %>
+            <% end %>
+            <div class="<%= "#{category} job-role live-job" %>" data-target=<%= "##{role.id}" %>>
+              <div class="job-title">
+              <p><%= role.title %></p>
+              </div>
+              <div class="job-sector">
+              <p><%= role.sector %></p>
+              </div>
+              <div class="job-salary">
+              <p><%= role.salary %></p>
+              </div>
+              <div class="job-package">
+              <p><%= role.package %></p>
+              </div>
+              <div class="job-description">
+              <p><%= role.company %></p>
+              </div>
+            </div>
+            <% count += 1 %>
+            <% end %>
+          </div>
+          <div class="scroll-btns">
+            <span class="prev">< Prev</span>
+            <span class="next">Next ></span>
+          </div>
         </div>
-      </div>
-				<!-- <div class="job-role live-job">
-					<div class="job-title">
-						<p>Senior Development Manager</p>
-					</div>
-					<div class="job-sector">
-						<p>PRS</p>
-					</div>
-					<div class="job-salary">
-						<p>£70K-£80K</p>
-					</div>
-					<div class="job-package">
-						<p>Bonus + Benefits</p>
-					</div>
-					<div class="job-description">
-						<p>A top-tier private equity company</p>
-					</div>
-				</div> -->
 			</div>
 		</div>
 
