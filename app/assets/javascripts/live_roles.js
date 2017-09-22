@@ -7,11 +7,11 @@ $(document).ready(function() {
       1000);
   })
 
-  // $(".btn-commercial").click(function(e) {
-  //   e.preventDefault();
-  //   $(".residential").addClass("hidden");
-  //   $(".commercial").removeClass("hidden");
-  // })
+  $(".btn-commercial").click(function(e) {
+    e.preventDefault();
+    $(".all-rolls").addClass("hidden");
+    $(".commercial-rolls").removeClass("hidden");
+  })
   // $(".btn-residential").click(function(e) {
   //   e.preventDefault();
   //   $(".commercial").addClass("hidden");
