@@ -87,10 +87,10 @@
 
 
 
-      <div class="all-rolls">
+      <div class="commercial-rolls hidden">
         <div class="page active">
         <% count = 1 %>
-        <% @live_roles.each do |role| %>
+        <% @commercial_roles.each do |role| %>
         <% if role.category.id == 1 %>
           <% category = "commercial" %>
         <% elsif role.category.id == 2 %>

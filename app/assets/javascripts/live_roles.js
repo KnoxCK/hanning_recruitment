@@ -20,13 +20,17 @@ $(document).ready(function() {
 
   $(".scroll-btns .next").click(function() {
     var activePage = $(".page.active");
-    activePage.removeClass("active");
-    activePage.next().addClass("active");
+    if (activePage.next().hasClass("page")) {
+      activePage.removeClass("active");
+      activePage.next().addClass("active");
+    }
   })
 
   $(".scroll-btns .prev").click(function() {
     var activePage = $(".page.active");
-    activePage.removeClass("active");
-    activePage.prev().addClass("active");
+    if (activePage.prev().hasClass("page")) {
+      activePage.removeClass("active");
+      activePage.prev().addClass("active");
+    }
   })
 })
