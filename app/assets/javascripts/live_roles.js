@@ -18,10 +18,15 @@ $(document).ready(function() {
   //   $(".residential").removeClass("hidden");
   // })
 
-  $(".next").click(function() {
-    console.log("oi")
+  $(".scroll-btns .next").click(function() {
     var activePage = $(".page.active");
     activePage.removeClass("active");
     activePage.next().addClass("active");
+  })
+
+  $(".scroll-btns .prev").click(function() {
+    var activePage = $(".page.active");
+    activePage.removeClass("active");
+    activePage.prev().addClass("active");
   })
 })
