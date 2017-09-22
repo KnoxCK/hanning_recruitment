@@ -31,14 +31,34 @@
 				</div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="all-roles">
+        <div class="page active">
+        <% count = 0 %>
         <% @live_roles.each do |role| %>
-        <% if role.category.id == 1 %>
-          <% category = "commercial" %>
-        <% elsif role.category.id == 2 %>
-          <% category = "residential" %>
-        <% else %>
-          <% category = "c-and-r" %>
-        <% end %>
+          <% if count == 8 %>
+            </div>
+            <div class="page">
+          <% end %>
+          <% if role.category.id == 1 %>
+            <% category = "commercial" %>
+          <% elsif role.category.id == 2 %>
+            <% category = "residential" %>
+          <% else %>
+            <% category = "c-and-r" %>
+          <% end %>
           <div class="<%= "#{category} job-role live-job" %>" data-target=<%= "##{role.id}" %>>
             <div class="job-title">
             <p><%= role.title %></p>
@@ -56,7 +76,99 @@
             <p><%= role.company %></p>
             </div>
           </div>
+          <% count += 1 %>
+        <% end %>
+        </div>
+        <div class="scroll-btns">
+          <span class="prev">< Prev</span>
+          <span class="next">Next ></span>
+        </div>
+      </div>
+
+
+
+      <div class="commercial-roles hidden">
+        <div class="page">
+        <% count = 0 %>
+        <% @commercial_roles.each do |role| %>
+          <% if count == 8 %>
+            </div>
+            <div class="page">
           <% end %>
+          <% if role.category.id == 1 %>
+            <% category = "commercial" %>
+          <% elsif role.category.id == 2 %>
+            <% category = "residential" %>
+          <% else %>
+            <% category = "c-and-r" %>
+          <% end %>
+          <div class="<%= "#{category} job-role live-job" %>" data-target=<%= "##{role.id}" %>>
+            <div class="job-title">
+            <p><%= role.title %></p>
+            </div>
+            <div class="job-sector">
+            <p><%= role.sector %></p>
+            </div>
+            <div class="job-salary">
+            <p><%= role.salary %></p>
+            </div>
+            <div class="job-package">
+            <p><%= role.package %></p>
+            </div>
+            <div class="job-description">
+            <p><%= role.company %></p>
+            </div>
+          </div>
+          <% count += 1 %>
+        <% end %>
+        </div>
+        <div class="scroll-btns">
+          <span class="prev">< Prev</span>
+          <span class="next">Next ></span>
+        </div>
+      </div>
+
+
+      <div class="residential-roles hidden">
+        <div class="page">
+        <% count = 0 %>
+        <% @residential_roles.each do |role| %>
+          <% if count == 8 %>
+            </div>
+            <div class="page">
+          <% end %>
+          <% if role.category.id == 1 %>
+            <% category = "commercial" %>
+          <% elsif role.category.id == 2 %>
+            <% category = "residential" %>
+          <% else %>
+            <% category = "c-and-r" %>
+          <% end %>
+          <div class="<%= "#{category} job-role live-job" %>" data-target=<%= "##{role.id}" %>>
+            <div class="job-title">
+            <p><%= role.title %></p>
+            </div>
+            <div class="job-sector">
+            <p><%= role.sector %></p>
+            </div>
+            <div class="job-salary">
+            <p><%= role.salary %></p>
+            </div>
+            <div class="job-package">
+            <p><%= role.package %></p>
+            </div>
+            <div class="job-description">
+            <p><%= role.company %></p>
+            </div>
+          </div>
+          <% count += 1 %>
+          <% end %>
+        </div>
+        <div class="scroll-btns">
+          <span class="prev">< Prev</span>
+          <span class="next">Next ></span>
+        </div>
+      </div>
 				<!-- <div class="job-role live-job">
 					<div class="job-title">
 						<p>Senior Development Manager</p>
@@ -113,7 +225,7 @@
                 <div class="filename"></div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-commercial" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
                 <%= a.submit "Submit", class: "btn btn-apply-form" %>
                 <% end %>
               </div>

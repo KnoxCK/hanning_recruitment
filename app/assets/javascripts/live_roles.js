@@ -9,12 +9,43 @@ $(document).ready(function() {
 
   $(".btn-commercial").click(function(e) {
     e.preventDefault();
-    $(".residential").addClass("hidden");
-    $(".commercial").removeClass("hidden");
+    $(".all-roles").addClass("hidden");
+    $(".all-roles .page.active").removeClass("active");
+    $(".residential-roles").addClass("hidden");
+    $(".residential-roles .page.active").removeClass("active");
+    $(".commercial-roles").removeClass("hidden");
+    $(".commercial-roles .page:first-child").addClass("active");
   })
+
   $(".btn-residential").click(function(e) {
     e.preventDefault();
-    $(".commercial").addClass("hidden");
-    $(".residential").removeClass("hidden");
+    $(".all-roles").addClass("hidden");
+    $(".all-roles .page.active").removeClass("active");
+    $(".commercial-roles").addClass("hidden");
+    $(".commercial-roles .page.active").removeClass("active");
+    $(".residential-roles").removeClass("hidden");
+    $(".residential-roles .page:first-child").addClass("active");
+  })
+
+  $(".scroll-btns .next").click(function() {
+    var activePage = $(".page.active");
+    if (activePage.next().hasClass("page")) {
+      activePage.removeClass("active");
+      activePage.next().addClass("active");
+      $('html,body').animate({
+      scrollTop: $(".job-roles").offset().top - 100},
+      1000);
+    }
+  })
+
+  $(".scroll-btns .prev").click(function() {
+    var activePage = $(".page.active");
+    if (activePage.prev().hasClass("page")) {
+      activePage.removeClass("active");
+      activePage.prev().addClass("active");
+      $('html,body').animate({
+      scrollTop: $(".job-roles").offset().top - 100},
+      1000);
+    }
   })
 })

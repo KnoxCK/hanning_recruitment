@@ -12,8 +12,8 @@ class PagesController < ApplicationController
 
   def live_roles
     @live_roles = LiveRole.all.order(:created_at).reverse
-    @commercial_roles = LiveRole.where(category_id: 1)
-    @residential_roles = LiveRole.where(category_id: 2)
+    @commercial_roles = LiveRole.where(category_id: [1, 3])
+    @residential_roles = LiveRole.where(category_id: [2, 3])
     @job_application = JobApplication.new
   end
 
