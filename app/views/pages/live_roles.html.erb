@@ -31,6 +31,22 @@
 				</div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="all-rolls">
+        <div class="page">
+        <% count = 1 %>
         <% @live_roles.each do |role| %>
         <% if role.category.id == 1 %>
           <% category = "commercial" %>
@@ -56,7 +72,18 @@
             <p><%= role.company %></p>
             </div>
           </div>
+          <% if count == 8 %>
+            </div>
+            <div class="page">
           <% end %>
+          <% count += 1 %>
+          <% end %>
+        </div>
+        <div class="scroll-btns">
+          <span class="prev">< Prev</span>
+          <span class="next">Next ></span>
+        </div>
+      </div>
 				<!-- <div class="job-role live-job">
 					<div class="job-title">
 						<p>Senior Development Manager</p>
