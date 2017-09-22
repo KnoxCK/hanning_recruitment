@@ -18,7 +18,8 @@ $(document).ready(function() {
   //   $(".residential").removeClass("hidden");
   // })
 
-  $(".scroll-btns.next").click(function() {
+  $(".next").click(function() {
+    console.log("oi")
     var activePage = $(".page.active");
     activePage.removeClass("active");
     activePage.next().addClass("active");
