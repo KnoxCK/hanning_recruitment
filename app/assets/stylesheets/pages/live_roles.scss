@@ -129,7 +129,9 @@
 .scroll-btns {
   display: flex;
   justify-content: space-between;
-  margin: 20px 5px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 10px;
 }
 @media only screen and (max-width: 1000px) {
     .live-roles {
