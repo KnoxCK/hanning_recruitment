@@ -14,7 +14,7 @@ $(document).ready(function() {
     $(".residential-roles").addClass("hidden");
     $(".residential-roles .page.active").removeClass("active");
     $(".commercial-roles").removeClass("hidden");
-    $(".commercial-roles div:first-child").addClass("active");
+    $(".commercial-roles .page:first-child").addClass("active");
   })
 
   $(".btn-residential").click(function(e) {
@@ -24,7 +24,7 @@ $(document).ready(function() {
     $(".commercial-roles").addClass("hidden");
     $(".commercial-roles .page.active").removeClass("active");
     $(".residential-roles").removeClass("hidden");
-    $(".residential-roles div:first-child").addClass("active");
+    $(".residential-roles .page:first-child").addClass("active");
   })
 
   $(".scroll-btns .next").click(function() {
