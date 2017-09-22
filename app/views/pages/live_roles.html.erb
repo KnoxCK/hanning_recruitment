@@ -84,6 +84,49 @@
           <span class="next">Next ></span>
         </div>
       </div>
+
+
+
+      <div class="all-rolls">
+        <div class="page active">
+        <% count = 1 %>
+        <% @live_roles.each do |role| %>
+        <% if role.category.id == 1 %>
+          <% category = "commercial" %>
+        <% elsif role.category.id == 2 %>
+          <% category = "residential" %>
+        <% else %>
+          <% category = "c-and-r" %>
+        <% end %>
+          <div class="<%= "#{category} job-role live-job" %>" data-target=<%= "##{role.id}" %>>
+            <div class="job-title">
+            <p><%= role.title %></p>
+            </div>
+            <div class="job-sector">
+            <p><%= role.sector %></p>
+            </div>
+            <div class="job-salary">
+            <p><%= role.salary %></p>
+            </div>
+            <div class="job-package">
+            <p><%= role.package %></p>
+            </div>
+            <div class="job-description">
+            <p><%= role.company %></p>
+            </div>
+          </div>
+          <% if count == 8 %>
+            </div>
+            <div class="page">
+          <% end %>
+          <% count += 1 %>
+          <% end %>
+        </div>
+        <div class="scroll-btns">
+          <span class="prev">< Prev</span>
+          <span class="next">Next ></span>
+        </div>
+      </div>
 				<!-- <div class="job-role live-job">
 					<div class="job-title">
 						<p>Senior Development Manager</p>
