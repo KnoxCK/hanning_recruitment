@@ -46,15 +46,19 @@
 
       <div class="all-roles">
         <div class="page active">
-        <% count = 1 %>
+        <% count = 0 %>
         <% @live_roles.each do |role| %>
-        <% if role.category.id == 1 %>
-          <% category = "commercial" %>
-        <% elsif role.category.id == 2 %>
-          <% category = "residential" %>
-        <% else %>
-          <% category = "c-and-r" %>
-        <% end %>
+          <% if count == 8 %>
+            </div>
+            <div class="page">
+          <% end %>
+          <% if role.category.id == 1 %>
+            <% category = "commercial" %>
+          <% elsif role.category.id == 2 %>
+            <% category = "residential" %>
+          <% else %>
+            <% category = "c-and-r" %>
+          <% end %>
           <div class="<%= "#{category} job-role live-job" %>" data-target=<%= "##{role.id}" %>>
             <div class="job-title">
             <p><%= role.title %></p>
@@ -72,12 +76,8 @@
             <p><%= role.company %></p>
             </div>
           </div>
-          <% if count == 8 %>
-            </div>
-            <div class="page">
-          <% end %>
           <% count += 1 %>
-          <% end %>
+        <% end %>
         </div>
         <div class="scroll-btns">
           <span class="prev">< Prev</span>
@@ -88,16 +88,20 @@
 
 
       <div class="commercial-roles hidden">
-        <div class="page active">
-        <% count = 1 %>
+        <div class="page">
+        <% count = 0 %>
         <% @commercial_roles.each do |role| %>
-        <% if role.category.id == 1 %>
-          <% category = "commercial" %>
-        <% elsif role.category.id == 2 %>
-          <% category = "residential" %>
-        <% else %>
-          <% category = "c-and-r" %>
-        <% end %>
+          <% if count == 8 %>
+            </div>
+            <div class="page">
+          <% end %>
+          <% if role.category.id == 1 %>
+            <% category = "commercial" %>
+          <% elsif role.category.id == 2 %>
+            <% category = "residential" %>
+          <% else %>
+            <% category = "c-and-r" %>
+          <% end %>
           <div class="<%= "#{category} job-role live-job" %>" data-target=<%= "##{role.id}" %>>
             <div class="job-title">
             <p><%= role.title %></p>
@@ -115,12 +119,8 @@
             <p><%= role.company %></p>
             </div>
           </div>
-          <% if count == 8 %>
-            </div>
-            <div class="page">
-          <% end %>
           <% count += 1 %>
-          <% end %>
+        <% end %>
         </div>
         <div class="scroll-btns">
           <span class="prev">< Prev</span>
@@ -130,16 +130,20 @@
 
 
       <div class="residential-roles hidden">
-        <div class="page active">
-        <% count = 1 %>
+        <div class="page">
+        <% count = 0 %>
         <% @residential_roles.each do |role| %>
-        <% if role.category.id == 1 %>
-          <% category = "commercial" %>
-        <% elsif role.category.id == 2 %>
-          <% category = "residential" %>
-        <% else %>
-          <% category = "c-and-r" %>
-        <% end %>
+          <% if count == 8 %>
+            </div>
+            <div class="page">
+          <% end %>
+          <% if role.category.id == 1 %>
+            <% category = "commercial" %>
+          <% elsif role.category.id == 2 %>
+            <% category = "residential" %>
+          <% else %>
+            <% category = "c-and-r" %>
+          <% end %>
           <div class="<%= "#{category} job-role live-job" %>" data-target=<%= "##{role.id}" %>>
             <div class="job-title">
             <p><%= role.title %></p>
@@ -157,10 +161,6 @@
             <p><%= role.company %></p>
             </div>
           </div>
-          <% if count == 8 %>
-            </div>
-            <div class="page">
-          <% end %>
           <% count += 1 %>
           <% end %>
         </div>

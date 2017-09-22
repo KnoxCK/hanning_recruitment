@@ -10,15 +10,21 @@ $(document).ready(function() {
   $(".btn-commercial").click(function(e) {
     e.preventDefault();
     $(".all-roles").addClass("hidden");
-    $("residential-roles").addClass("hidden");
+    $(".all-roles .page.active").removeClass("active");
+    $(".residential-roles").addClass("hidden");
+    $(".residential-roles .page.active").removeClass("active");
     $(".commercial-roles").removeClass("hidden");
+    $(".commercial-roles div:first-child").addClass("active");
   })
 
   $(".btn-residential").click(function(e) {
     e.preventDefault();
     $(".all-roles").addClass("hidden");
+    $(".all-roles .page.active").removeClass("active");
     $(".commercial-roles").addClass("hidden");
+    $(".commercial-roles .page.active").removeClass("active");
     $(".residential-roles").removeClass("hidden");
+    $(".residential-roles div:first-child").addClass("active");
   })
 
   $(".scroll-btns .next").click(function() {
