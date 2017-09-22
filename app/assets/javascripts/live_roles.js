@@ -9,15 +9,15 @@ $(document).ready(function() {
 
   $(".btn-commercial").click(function(e) {
     e.preventDefault();
-    $(".all-rolls").addClass("hidden");
+    $(".all-roles").addClass("hidden");
     $("residential-roles").addClass("hidden");
     $(".commercial-roles").removeClass("hidden");
   })
 
   $(".btn-residential").click(function(e) {
     e.preventDefault();
-     $(".all-rolls").addClass("hidden");
-    $("commercial-roles").addClass("hidden");
+    $(".all-roles").addClass("hidden");
+    $(".commercial-roles").addClass("hidden");
     $(".residential-roles").removeClass("hidden");
   })
 

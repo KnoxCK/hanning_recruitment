@@ -118,8 +118,13 @@
 }
 
 .next {
-
+  cursor: pointer;
 }
+
+.prev {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 518px) {
 	.btn-submit-contact {
 	    width: auto;
