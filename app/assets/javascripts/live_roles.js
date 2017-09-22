@@ -32,6 +32,9 @@ $(document).ready(function() {
     if (activePage.next().hasClass("page")) {
       activePage.removeClass("active");
       activePage.next().addClass("active");
+      $('html,body').animate({
+      scrollTop: $(".job-roles").offset().top - 100},
+      1000);
     }
   })
 
@@ -40,6 +43,9 @@ $(document).ready(function() {
     if (activePage.prev().hasClass("page")) {
       activePage.removeClass("active");
       activePage.prev().addClass("active");
+      $('html,body').animate({
+      scrollTop: $(".job-roles").offset().top - 100},
+      1000);
     }
   })
 })
