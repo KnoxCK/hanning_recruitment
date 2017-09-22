@@ -7,14 +7,20 @@ $(document).ready(function() {
       1000);
   })
 
-  $(".btn-commercial").click(function(e) {
-    e.preventDefault();
-    $(".residential").addClass("hidden");
-    $(".commercial").removeClass("hidden");
-  })
-  $(".btn-residential").click(function(e) {
-    e.preventDefault();
-    $(".commercial").addClass("hidden");
-    $(".residential").removeClass("hidden");
+  // $(".btn-commercial").click(function(e) {
+  //   e.preventDefault();
+  //   $(".residential").addClass("hidden");
+  //   $(".commercial").removeClass("hidden");
+  // })
+  // $(".btn-residential").click(function(e) {
+  //   e.preventDefault();
+  //   $(".commercial").addClass("hidden");
+  //   $(".residential").removeClass("hidden");
+  // })
+
+  $(".scroll-btns.next").click(function() {
+    var activePage = $(".page.active");
+    activePage.removeClass("active");
+    activePage.next().addClass("active");
   })
 })
