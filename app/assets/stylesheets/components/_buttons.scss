@@ -103,6 +103,28 @@
 	background-color: #ffec3b;
 	border-color: #ffec3b;
 }
+
+.btn-close {
+  color: #d6d6d6;
+  background-color: #1b3447;
+  border-color: #1b3447;
+  &:hover {
+    color: #d6d6d6;
+  }
+  &:focus {
+    color: #d6d6d6;
+  }
+
+}
+
+.next {
+  cursor: pointer;
+}
+
+.prev {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 518px) {
 	.btn-submit-contact {
 	    width: auto;
