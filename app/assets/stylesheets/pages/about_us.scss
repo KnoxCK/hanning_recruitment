@@ -27,6 +27,13 @@
 	margin-top: 50px;
 	display: flex;
 	justify-content: space-between;
+	h2 {
+		font-size: 20px; //for the testimonials
+		line-height: 26px;
+		span {
+			color: #ffec3b;
+		}
+	}
 	h5, h6 {
 		color: #C5C5C5;
 		font-style: italic;
