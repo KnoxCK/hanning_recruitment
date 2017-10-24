@@ -21,17 +21,34 @@
 		font-size: 16px;
 	}
 }
+.test-circle {
+	background-color: #253648;
+	border-radius: 50%;
+	height: 326px;
+    width: 326px;
+    position: relative;
+    margin: 10px;
+}
+.test1, .test2, .test3 {
+	position: absolute;
+	top: 50px;
+    left: 50px;
+    width: 236px;
+}
 .about-us-right-col {
 	width: 600px;
 	padding: 0 60px;
-	margin-top: 50px;
+	margin-top: 5px;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
+	flex-direction: column;
 	h2 {
-		font-size: 20px; //for the testimonials
-		line-height: 26px;
+		font-size: 12px;
+    	line-height: 14px;
 		span {
 			color: #ffec3b;
+			padding-left: 60px;
 		}
 	}
 	h5, h6 {
