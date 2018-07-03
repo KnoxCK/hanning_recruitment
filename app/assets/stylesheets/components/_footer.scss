@@ -30,6 +30,12 @@
 .footer-sm {
 	padding: 10px 0;
 }
+.footer-copyright {
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
 @media only screen and (max-width: 560px) {
 	.footer {
 		justify-content: left;
@@ -39,5 +45,11 @@
 		p {
 			padding: 0;
 		}
+	}
+}
+@media only screen and (max-width: 374px) {
+	.footer-links {
+		flex-direction: column;
+		text-align: center;
 	}
 }
