@@ -30,22 +30,22 @@ $(document).ready(function() {
   $(".scroll-btns .next").click(function() {
     var activePage = $(".page.active");
     if (activePage.next().hasClass("page")) {
-      activePage.removeClass("active");
-      activePage.next().addClass("active");
       $('html,body').animate({
       scrollTop: $(".job-roles").offset().top - 100},
       1000);
+      activePage.removeClass("active");
+      activePage.next().addClass("active");
     }
   })
 
   $(".scroll-btns .prev").click(function() {
     var activePage = $(".page.active");
     if (activePage.prev().hasClass("page")) {
-      activePage.removeClass("active");
-      activePage.prev().addClass("active");
       $('html,body').animate({
       scrollTop: $(".job-roles").offset().top - 100},
       1000);
+      activePage.removeClass("active");
+      activePage.prev().addClass("active");
     }
   })
 })
