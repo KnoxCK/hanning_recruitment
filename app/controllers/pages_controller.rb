@@ -34,11 +34,11 @@ class PagesController < ApplicationController
 
   def instagram_call
     url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=5855364746.49cacea.fa77e9e21f3b4d88b0e7347358e797e0"
-    media = JSON.parse(open(url).read)["data"]
-    @image_urls = []
-    media.first(10).each do |media|
-      @image_urls << media["link"]
+    # media = JSON.parse(open(url).read)["data"]
+    # @image_urls = []
+    # media.first(10).each do |media|
+      # @image_urls << media["link"]
     end
-  end
+  # end
 
 end
