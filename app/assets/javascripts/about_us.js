@@ -2,6 +2,7 @@ $(document).ready(function(){
   $(".team-circle").click(function(e){
     e.preventDefault();
     $(".team-circle img").removeClass("active");
+    $(".bayfield-hr").addClass("hidden")
     $(this).children("img").addClass('active');
     $(".team-individual").removeClass("active");
     $($(this).data("target")).addClass("active");
