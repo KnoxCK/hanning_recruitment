@@ -18,5 +18,6 @@ $(document).ready(function(){
     window.setTimeout(function (){
       $(".team-individual").removeClass("active")},
        1000);
+      $(".bayfield-hr").removeClass("hidden")
   });
 });
